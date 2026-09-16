@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.env
+.git
+.gitignore
+dist
+*.zip
+README.md
+SETUP_AR.md
+index-*.html

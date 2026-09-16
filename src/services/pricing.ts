@@ -1,0 +1,6 @@
+import type { Product } from '@prisma/client';
+const category=[
+  {re:/gift/i,margin:.08,min:.03,max:.12},{re:/currency/i,margin:.10,min:.05,max:.16},{re:/game/i,margin:.12,min:.06,max:.18},{re:/software|key/i,margin:.17,min:.10,max:.25},{re:/ai/i,margin:.18,min:.10,max:.28},{re:/subscription|stream/i,margin:.18,min:.10,max:.28},{re:/account/i,margin:.22,min:.12,max:.32},{re:/template/i,margin:.30,min:.20,max:.45},{re:/graphic|design|creative|logo|brand|web ui|app ui/i,margin:.45,min:.30,max:1}
+];
+export function calculatePrice(base:number,cat:string){const c=category.find(x=>x.re.test(cat))||{margin:.18,min:.10,max:.30}; const variable=.0349,fixed=.49; const raw=(base+fixed)/(1-variable-c.margin); const price=raw<=10?Math.ceil(raw*2)/2:raw<=50?Math.ceil(raw)-.01:raw<=100?Math.ceil(raw/5)*5-.01:Math.ceil(raw/10)*10-.01; return {price:Number(price.toFixed(2)),targetMargin:c.margin};}
+export function authoritativeTotal(products:Product[],ids:number[]){let total=0; const items=[]; for(const id of ids){const p=products.find(x=>x.id===id && x.active); if(!p) throw new Error(`Product ${id} unavailable`); const calc=calculatePrice(Number(p.supplierPrice),p.category); const unit=Number(p.price); total+=unit; items.push({product:p,unit});} return {total:Number(total.toFixed(2)),items};}

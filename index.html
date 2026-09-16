@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="ARVÉN Creative — premium digital products, AI tools, gaming top-ups, gift cards, templates, and custom creative services.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#17130f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ARVÉN Creative — Premium Digital Products & Custom Design">
+<meta property="og:description" content="Premium digital products, gaming top-ups, gift cards, AI tools, templates, and custom creative services.">
+<meta property="og:site_name" content="ARVÉN Creative">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="/">
+<title>ARVÉN Creative — Premium Digital Products & Custom Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"ARVÉN Creative","description":"Premium digital products, gaming top-ups, gift cards, templates and custom creative services."}</script>
+<style>
+:root{--bg:#f5f2ec;--card:#fffdfa;--gold:#b08d57;--gold2:#d7bd8a;--text:#151310;--muted:#756f65;--border:#ded8cc;--head:'Syne',serif;--body:'Plus Jakarta Sans',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:linear-gradient(135deg,#f7f4ee 0%,#f1ede5 100%);color:var(--text);font-family:var(--body);line-height:1.7;direction:ltr;letter-spacing:.01em}
+button,input,textarea,select{font:inherit}button{cursor:pointer}.container{max-width:1440px;margin:auto;padding:0 24px}
+header{position:sticky;top:0;z-index:1000;background:rgba(255,253,250,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:17px 4%}
+.head{display:flex;align-items:center;gap:20px;max-width:1440px;margin:auto}.logo{font:800 23px var(--head);letter-spacing:3px;white-space:nowrap;color:#17130f}.search{flex:1}
+.search input{width:100%;border:1px solid var(--border);background:var(--bg);border-radius:30px;padding:12px 17px;outline:0}.search input:focus,.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--gold);box-shadow:0 0 0 3px #b08d5730}
+.actions{display:flex;gap:8px}.pill{border:1px solid #17130f;background:#17130f;color:#fff;border-radius:30px;padding:12px 19px;font:700 10px var(--head);letter-spacing:1px;transition:.25s ease;box-shadow:0 8px 20px #00000012}
+.pill:hover{transform:translateY(-2px);box-shadow:0 12px 26px #00000018}.pill:focus-visible,.btn:focus-visible,.tab:focus-visible,.cat:focus-visible,.close:focus-visible{outline:3px solid #b08d57;outline-offset:2px}.pill.light{background:#fff;color:#111;border-color:#ddd}
+.hero{background:linear-gradient(145deg,#fffdfa,#f7f2e9);border:1px solid var(--border);margin:25px 0 55px;padding:115px 30px;text-align:center;box-shadow:0 25px 70px #5f4b2b10;position:relative;overflow:hidden}
+.hero:before{content:'ARVÉN';position:absolute;inset:auto 0 -45px;font:800 120px/1 var(--head);letter-spacing:18px;color:#b08d5710;pointer-events:none}
+.hero h1{font:800 clamp(40px,6vw,76px)/1.03 var(--head);letter-spacing:-3px;max-width:1000px;margin:auto;position:relative}.hero p{position:relative;max-width:700px;margin:22px auto;color:var(--muted);font-size:14px}.hero .pill{margin:8px}
+.tabs{display:flex;justify-content:center;position:relative;gap:8px;overflow:auto;margin-bottom:45px;padding-bottom:15px;border-bottom:1px solid var(--border)}
+.tab{border:1px solid transparent;background:transparent;border-radius:30px;padding:11px 19px;color:#888;font:700 10px var(--head);white-space:nowrap}.tab.active{background:#17130f;color:#fff;box-shadow:0 8px 20px #00000012}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:45px}.sidebar h3{font:800 10px var(--head);letter-spacing:2px;color:#999;margin-bottom:15px}
+.cats{display:flex;flex-direction:column}.cat{background:transparent;border:0;text-align:left;padding:10px;color:#777;font-size:12px}.cat.active,.cat:hover{color:#111;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:20px}.product{background:var(--card);border:1px solid var(--border);overflow:hidden;transition:.35s;box-shadow:0 8px 24px #4d3b2210}.product:hover{transform:translateY(-6px);box-shadow:0 22px 45px #4d3b2220}
+.thumb{height:235px;background:#eee;position:relative}.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}.product:hover .thumb img{transform:scale(1.04)}
+.thumb span{position:absolute;bottom:10px;right:10px;background:#0008;color:#fff;font-size:8px;letter-spacing:1px;padding:4px 7px}.info{padding:19px}.title{font:700 16px var(--head);letter-spacing:.2px}.catname{font-size:9px;color:#999;letter-spacing:1px;margin:5px 0 15px}.price{font:800 19px var(--head);margin-bottom:15px;color:#9a743d}
+.btns{display:flex;gap:7px}.btn{flex:1;padding:10px;border:1px solid #ddd;background:#fff;font:700 9px var(--head)}.btn.buy{background:#17130f;color:#fff;border-color:#17130f}
+.support{margin:90px auto 0;max-width:1440px;background:linear-gradient(145deg,#fffdfa,#f4eee3);border:1px solid var(--border);padding:65px;box-shadow:0 22px 60px #4d3b2210;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.support h2{font:800 42px var(--head);line-height:1.1}.support p{color:var(--muted);font-size:13px;margin-top:15px}.form{background:#fafaf8;border:1px solid var(--border);padding:25px}
+.form label{display:block;font-size:10px;color:#777;margin:0 0 6px}.form input,.form textarea,.form select{width:100%;border:1px solid #ddd;background:#fff;padding:11px;margin-bottom:13px;outline:0}.form textarea{min-height:105px;resize:vertical}
+.modal{display:none;position:fixed;inset:0;background:#fffdfde6;backdrop-filter:blur(15px);z-index:2000;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal[aria-hidden="true"]{display:none}.modal[aria-hidden="false"]{display:flex}.box{width:min(720px,100%);max-height:92vh;overflow:auto;background:#fff;border:1px solid #ddd;box-shadow:0 25px 70px #0002;padding:35px;position:relative}
+.close{position:absolute;top:14px;left:14px;border:0;background:#f2f2ef;border-radius:50%;width:35px;height:35px;font-size:20px}.preview{height:280px;background:#f2f1ed;margin-bottom:20px}.preview img{width:100%;height:100%;object-fit:cover}
+.checkout-list{background:#fafaf8;border:1px solid var(--border);padding:15px;margin:15px 0}.payment{background:#fafaf8;border:1px solid var(--border);padding:20px;margin:18px 0}.method{background:#fff;border:1px solid var(--border);padding:13px;margin:9px 0}.method code{display:block;background:#f4f4f1;padding:9px;margin-top:6px;word-break:break-all}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.full{grid-column:1/-1}.note{font-size:11px;color:#777;background:#f7f7f5;padding:12px;margin:12px 0}
+footer{text-align:center;background:#17130f;border-top:1px solid var(--border);margin-top:100px;padding:80px 20px;color:#c9bda9;font-size:9px;letter-spacing:1px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.cats{flex-direction:row;overflow:auto}.cat{white-space:nowrap}.support{grid-template-columns:1fr;padding:35px 22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.product:hover,.pill:hover{transform:none}}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:650px){.head{flex-wrap:wrap}.search{order:3;flex-basis:100%}.hero{padding:70px 20px}.grid{grid-template-columns:1fr}.support h2{font-size:32px}.box{padding:28px 18px}.grid2{grid-template-columns:1fr}.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header><div class="head"><div class="logo" aria-label="ARVÉN Creative">ARVÉN CREATIVE</div><div class="search"><label for="searchInput" class="sr-only">Search products and designs</label><input id="searchInput" type="search" autocomplete="off" placeholder="Search products and designs..." aria-label="Search products and designs"></div><div class="actions"><button class="pill light" onclick="openSupport()">✦ Support</button><button class="pill" onclick="openCart()">🛒 Cart (<span id="cartCount">0</span>)</button></div></div></header>
+<main class="container">
+<section class="hero"><h1>Digital Artifacts, Designed to Feel Exclusive</h1><p>منتجات رقمية فاخرة وتصاميم حسب الطلب. اختر المنتج، واكتب مواصفاتك، وأرسل بريدك الإلكتروني ليستلم المنتج بعد التحقق من الدفع.</p><button class="pill" onclick="openCustomRequest()">✦ حسب طلبك — اطلب وسيتم التنفيذ</button></section>
+<div class="tabs"><button class="tab active" onclick="switchTab('custom',this)">🎨 Custom Designs</button><button class="tab" onclick="switchTab('templates',this)">📐 Ready-Made Templates</button><button class="tab" onclick="switchTab('ai',this)">🤖 AI Services</button><button class="tab" onclick="switchTab('marketplace',this)">🛍️ Digital Products</button></div>
+<div class="layout"><aside class="sidebar"><h3>Categories</h3><div class="cats" id="categoryList"></div></aside><section><div class="grid" id="productsGrid"></div></section></div>
+</main>
+<section class="support" id="support"><div><h2>We're here when you need us.</h2><p>For help with orders, payments, or downloads, send us a message and we will review it.</p></div><div class="form"><form onsubmit="submitSupport(event)"><label>Name</label><input id="supportName" required><label>Email / WhatsApp</label><input id="supportContact" required><label>Issue Type</label><select id="supportTopic"><option>Order / Purchase</option><option>Payment</option><option>Download</option><option>Other</option></select><label>Message</label><textarea id="supportMessage" required></textarea><button class="pill" style="width:100%">Send Support Request</button></form></div></section>
+<footer>© 2026 ARVÉN CREATIVE — PRIVATE DIGITAL COLLECTION. ALL RIGHTS RESERVED.</footer>
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="productModalTitle"><div class="box"><button class="close" onclick="closeModal('productModal')">×</button><div id="modalBody"></div></div></div>
+<div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cartModalTitle"><div class="box"><button class="close" onclick="closeModal('cartModal')">×</button><h2 id="cartModalTitle" style="font-family:var(--head)">🛒 Cart</h2><div id="cartItems" class="checkout-list"></div><h3>Total: $<span id="cartTotal">0.00</span></h3><button class="pill" style="width:100%;margin-top:18px" onclick="openCheckout()">💳 Checkout & Payment</button></div></div>
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="checkoutModalTitle"><div class="box"><button class="close" onclick="closeModal('checkoutModal')">×</button><div id="checkoutBody"></div></div></div>
+<div class="modal" id="customModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="customModalTitle"><div class="box"><button class="close" onclick="closeModal('customModal')">×</button><div id="customBody"></div></div></div>
+<!-- ========================================================= -->
+<!-- نظام تسعير المنتجات والتصاميم والدفع لمتجر ARVÉN Creative -->
+<!-- ========================================================= -->
+<script>
+/* ARVÉN Professional Pricing Engine — US / EU
+   Fees are configurable estimates. Update them when your real processor/marketplace fees are known.
+   The engine calculates variable fees on the FINAL selling price, then solves for a target NET margin.
+*/
+const PLATFORM_RATES = {
+    "DIRECT_CARD": { label:"ARVÉN Direct / Card", platformFeePct:0.0, paymentFeePct:3.49, fixedFee:0.49 },
+    "DIRECT_CRYPTO": { label:"ARVÉN Direct / Crypto", platformFeePct:0.0, paymentFeePct:0.0, fixedFee:0.00 },
+    "Z2U": { label:"Z2U", platformFeePct:2.0, paymentFeePct:3.0, fixedFee:0.50 },
+    "G2G": { label:"G2G", platformFeePct:3.0, paymentFeePct:3.5, fixedFee:0.49 },
+    "GamsGo": { label:"GamsGo", platformFeePct:0.0, paymentFeePct:2.5, fixedFee:0.25 },
+    "PLAYER_UP": { label:"PLAYER UP", platformFeePct:4.0, paymentFeePct:4.0, fixedFee:0.50 },
+    "HadiTech": { label:"HadiTech", platformFeePct:0.0, paymentFeePct:2.0, fixedFee:0.00 },
+    "WM_CENTRE": { label:"WM CENTRE", platformFeePct:2.5, paymentFeePct:3.0, fixedFee:0.20 },
+    "GGSel": { label:"GGsel", platformFeePct:3.0, paymentFeePct:3.5, fixedFee:0.35 },
+    "GM2P": { label:"GM2P", platformFeePct:3.5, paymentFeePct:3.8, fixedFee:0.40 }
+};
+
+/* Target NET margin on the final sale price.
+   Competitive categories intentionally use lower margins; creative services use higher margins. */
+const CATEGORY_PRICING = [
+    {match:/gift card|retail gift/i, margin:8,  minMarkup:3,  maxMarkup:12},
+    {match:/game currency|currency|coins|points/i, margin:10, minMarkup:5, maxMarkup:16},
+    {match:/video game|games|game key|game code/i, margin:12, minMarkup:6, maxMarkup:18},
+    {match:/software|windows|office|license|key/i, margin:17, minMarkup:10, maxMarkup:25},
+    {match:/ai tools?|ai tool/i, margin:18, minMarkup:10, maxMarkup:28},
+    {match:/subscription|streaming|membership/i, margin:18, minMarkup:10, maxMarkup:28},
+    {match:/account|premium account/i, margin:22, minMarkup:12, maxMarkup:32},
+    {match:/template|ready templates/i, margin:30, minMarkup:20, maxMarkup:45},
+    {match:/graphics|design|logo|brand|web ui|app ui|social media|ads|banner/i, margin:45, minMarkup:30, maxMarkup:100},
+    {match:/creative|custom/i, margin:45, minMarkup:30, maxMarkup:100}
+];
+
+function getCategoryPricing(category){
+    const c=String(category||"");
+    return CATEGORY_PRICING.find(x=>x.match.test(c)) || {margin:18,minMarkup:10,maxMarkup:30};
+}
+
+function roundMarketPrice(value){
+    const n=Number(value||0);
+    if(n<=10) return Math.max(0.99,Math.ceil(n*2)/2-0.01);
+    if(n<=50) return Math.ceil(n)-0.01;
+    if(n<=100) return Math.ceil(n/5)*5-0.01;
+    return Math.ceil(n/10)*10-0.01;
+}
+
+function calculateProductPricing(basePrice, platformKey="DIRECT_CARD", profitMarginPct=null, category=""){
+    const base=Math.max(0,Number(basePrice)||0);
+    const p=PLATFORM_RATES[platformKey]||PLATFORM_RATES.DIRECT_CARD;
+    const rules=getCategoryPricing(category);
+    const targetMargin=profitMarginPct!==null ? Number(profitMarginPct) : rules.margin;
+    const variableFee=(Number(p.platformFeePct||0)+Number(p.paymentFeePct||0))/100;
+    const fixedFee=Number(p.fixedFee||0);
+
+    /* Solve sale price so that:
+       net profit / sale price = targetMargin.
+       sale = (base + fixedFee) / (1 - variableFee - targetMargin)
+    */
+    const denominator=1-variableFee-(targetMargin/100);
+    const theoreticalPrice=denominator>0 ? (base+fixedFee)/denominator : base*2;
+    const minimumPrice=base*(1+rules.minMarkup/100);
+    const maximumPrice=base*(1+rules.maxMarkup/100);
+    const rawPrice=Math.max(theoreticalPrice,minimumPrice);
+    const sellingPrice=roundMarketPrice(rawPrice);
+    const platformFee=sellingPrice*(Number(p.platformFeePct||0)/100);
+    const paymentFee=sellingPrice*(Number(p.paymentFeePct||0)/100)+fixedFee;
+    const totalFees=platformFee+paymentFee;
+    const netCost=base+totalFees;
+    const netProfit=sellingPrice-netCost;
+    const actualMargin=sellingPrice>0 ? (netProfit/sellingPrice)*100 : 0;
+
+    return {
+        platform:platformKey,
+        platformLabel:p.label,
+        category:category||"Uncategorized",
+        targetNetMargin:Number(targetMargin.toFixed(2)),
+        actualNetMargin:Number(actualMargin.toFixed(2)),
+        basePrice:Number(base.toFixed(2)),
+        platformFee:Number(platformFee.toFixed(2)),
+        paymentFee:Number(paymentFee.toFixed(2)),
+        totalFees:Number(totalFees.toFixed(2)),
+        netCost:Number(netCost.toFixed(2)),
+        sellingPrice:Number(sellingPrice.toFixed(2)),
+        netProfit:Number(netProfit.toFixed(2)),
+        minMarkupPct:rules.minMarkup,
+        maxMarkupPct:rules.maxMarkup
+    };
+}
+
+const DESIGN_SERVICES_PRICING = [
+    {id:1,title:"Custom Logo Design",category:"Graphics & Design",netCost:15.00,sellingPrice:49.99,netProfit:34.99,description:"Professional vector logo with commercial rights & source files."},
+    {id:2,title:"Complete Brand Identity Kit",category:"Graphics & Design",netCost:35.00,sellingPrice:129.99,netProfit:94.99,description:"Logo, color palette, typography, brand guidelines & stationery."},
+    {id:3,title:"Web UI/UX Design (Figma)",category:"Graphics & Design",netCost:25.00,sellingPrice:89.99,netProfit:64.99,description:"Modern landing page or website design ready for development."},
+    {id:4,title:"Mobile App UI Design",category:"Graphics & Design",netCost:30.00,sellingPrice:99.99,netProfit:69.99,description:"iOS & Android app screens design with interactive prototype."},
+    {id:5,title:"Social Media Banner & Kit",category:"Graphics & Design",netCost:10.00,sellingPrice:34.99,netProfit:24.99,description:"Custom banners and post templates for Youtube, X, and Instagram."}
+];
+
+function applyAutoPricingToStore(productsArray){
+    return productsArray.map(product=>{
+        /* Use a declared channel when supplied; otherwise price for ARVÉN's direct card checkout. */
+        const platform=product.sourcePlatform || "DIRECT_CARD";
+        const calc=calculateProductPricing(product.price||9.50,platform,null,product.category);
+        return {
+            ...product,
+            sourcePlatform:platform,
+            originalSupplierPrice:calc.basePrice,
+            platformFee:calc.platformFee,
+            paymentFee:calc.paymentFee,
+            paymentAndPlatformFee:calc.totalFees,
+            netCostToYou:calc.netCost,
+            targetNetMargin:calc.targetNetMargin,
+            actualNetMargin:calc.actualNetMargin,
+            price:calc.sellingPrice,
+            yourNetProfit:calc.netProfit,
+            pricingEngine:"ARVÉN US/EU Professional Pricing"
+        };
+    });
+}
+
+function getPricingSummary(product){
+    const calc=calculateProductPricing(product.originalSupplierPrice||product.price||0,product.sourcePlatform||"DIRECT_CARD",null,product.category);
+    return calc;
+}
+</script>
+
+<script>
+const PRODUCTS = [];
+PRODUCTS.push({id:1,name:'Adobe Creative Cloud',category:'AI Tools',price:29.99,seller:'AI Vault',title:'Adobe Creative Cloud — 1 Month'});
+PRODUCTS.push({id:2,name:'Adobe Creative Cloud',category:'AI Tools',price:299.90,seller:'AI Vault',title:'Adobe Creative Cloud — 1 Year'});
+PRODUCTS.push({id:3,name:'Adobe Creative Cloud',category:'AI Tools',price:85.47,seller:'AI Vault',title:'Adobe Creative Cloud — 3 Months'});
+PRODUCTS.push({id:4,name:'Adobe Creative Cloud',category:'AI Tools',price:161.80,seller:'AI Vault',title:'Adobe Creative Cloud — 6 Months'});
+PRODUCTS.push({id:5,name:'Adobe Firefly',category:'AI Tools',price:10.19,seller:'AI Vault',title:'Adobe Firefly — 1 Month'});
+PRODUCTS.push({id:6,name:'Adobe Firefly',category:'AI Tools',price:101.90,seller:'AI Vault',title:'Adobe Firefly — 1 Year'});
+PRODUCTS.push({id:7,name:'Adobe Firefly',category:'AI Tools',price:29.04,seller:'AI Vault',title:'Adobe Firefly — 3 Months'});
+PRODUCTS.push({id:8,name:'Adobe Firefly',category:'AI Tools',price:54.98,seller:'AI Vault',title:'Adobe Firefly — 6 Months'});
+PRODUCTS.push({id:9,name:'Amazon Q Developer',category:'AI Tools',price:9.49,seller:'AI Vault',title:'Amazon Q Developer — 1 Month'});
+PRODUCTS.push({id:10,name:'Amazon Q Developer',category:'AI Tools',price:94.90,seller:'AI Vault',title:'Amazon Q Developer — 1 Year'});
+PRODUCTS.push({id:11,name:'Amazon Q Developer',category:'AI Tools',price:27.05,seller:'AI Vault',title:'Amazon Q Developer — 3 Months'});
+PRODUCTS.push({id:12,name:'Amazon Q Developer',category:'AI Tools',price:51.20,seller:'AI Vault',title:'Amazon Q Developer — 6 Months'});
+PRODUCTS.push({id:13,name:'Beautiful.ai',category:'AI Tools',price:9.79,seller:'AI Vault',title:'Beautiful.ai — 1 Month'});
+PRODUCTS.push({id:14,name:'Beautiful.ai',category:'AI Tools',price:97.90,seller:'AI Vault',title:'Beautiful.ai — 1 Year'});
+PRODUCTS.push({id:15,name:'Beautiful.ai',category:'AI Tools',price:27.90,seller:'AI Vault',title:'Beautiful.ai — 3 Months'});
+PRODUCTS.push({id:16,name:'Beautiful.ai',category:'AI Tools',price:52.82,seller:'AI Vault',title:'Beautiful.ai — 6 Months'});
+PRODUCTS.push({id:17,name:'Bolt.new',category:'AI Tools',price:8.19,seller:'AI Vault',title:'Bolt.new — 1 Month'});
+PRODUCTS.push({id:18,name:'Bolt.new',category:'AI Tools',price:81.90,seller:'AI Vault',title:'Bolt.new — 1 Year'});
+PRODUCTS.push({id:19,name:'Bolt.new',category:'AI Tools',price:23.34,seller:'AI Vault',title:'Bolt.new — 3 Months'});
+PRODUCTS.push({id:20,name:'Bolt.new',category:'AI Tools',price:44.19,seller:'AI Vault',title:'Bolt.new — 6 Months'});
+PRODUCTS.push({id:21,name:'Canva Pro',category:'AI Tools',price:8.59,seller:'AI Vault',title:'Canva Pro — 1 Month'});
+PRODUCTS.push({id:22,name:'Canva Pro',category:'AI Tools',price:85.90,seller:'AI Vault',title:'Canva Pro — 1 Year'});
+PRODUCTS.push({id:23,name:'Canva Pro',category:'AI Tools',price:24.48,seller:'AI Vault',title:'Canva Pro — 3 Months'});
+PRODUCTS.push({id:24,name:'Canva Pro',category:'AI Tools',price:46.34,seller:'AI Vault',title:'Canva Pro — 6 Months'});
+PRODUCTS.push({id:25,name:'CapCut Pro',category:'AI Tools',price:8.99,seller:'AI Vault',title:'CapCut Pro — 1 Month'});
+PRODUCTS.push({id:26,name:'CapCut Pro',category:'AI Tools',price:89.90,seller:'AI Vault',title:'CapCut Pro — 1 Year'});
+PRODUCTS.push({id:27,name:'CapCut Pro',category:'AI Tools',price:25.62,seller:'AI Vault',title:'CapCut Pro — 3 Months'});
+PRODUCTS.push({id:28,name:'CapCut Pro',category:'AI Tools',price:48.50,seller:'AI Vault',title:'CapCut Pro — 6 Months'});
+PRODUCTS.push({id:29,name:'Character.AI Plus',category:'AI Tools',price:6.99,seller:'AI Vault',title:'Character.AI Plus — 1 Month'});
+PRODUCTS.push({id:30,name:'Character.AI Plus',category:'AI Tools',price:69.90,seller:'AI Vault',title:'Character.AI Plus — 1 Year'});
+PRODUCTS.push({id:31,name:'Character.AI Plus',category:'AI Tools',price:19.92,seller:'AI Vault',title:'Character.AI Plus — 3 Months'});
+PRODUCTS.push({id:32,name:'Character.AI Plus',category:'AI Tools',price:37.71,seller:'AI Vault',title:'Character.AI Plus — 6 Months'});
+PRODUCTS.push({id:33,name:'ChatGPT Plus',category:'AI Tools',price:14.99,seller:'AI Vault',title:'ChatGPT Plus — 1 Month'});
+PRODUCTS.push({id:34,name:'ChatGPT Plus',category:'AI Tools',price:149.90,seller:'AI Vault',title:'ChatGPT Plus — 1 Year'});
+PRODUCTS.push({id:35,name:'ChatGPT Plus',category:'AI Tools',price:42.72,seller:'AI Vault',title:'ChatGPT Plus — 3 Months'});
+PRODUCTS.push({id:36,name:'ChatGPT Plus',category:'AI Tools',price:80.87,seller:'AI Vault',title:'ChatGPT Plus — 6 Months'});
+PRODUCTS.push({id:37,name:'ChatGPT Pro',category:'AI Tools',price:9.39,seller:'AI Vault',title:'ChatGPT Pro — 1 Month'});
+PRODUCTS.push({id:38,name:'ChatGPT Pro',category:'AI Tools',price:93.90,seller:'AI Vault',title:'ChatGPT Pro — 1 Year'});
+PRODUCTS.push({id:39,name:'ChatGPT Pro',category:'AI Tools',price:26.76,seller:'AI Vault',title:'ChatGPT Pro — 3 Months'});
+PRODUCTS.push({id:40,name:'ChatGPT Pro',category:'AI Tools',price:50.66,seller:'AI Vault',title:'ChatGPT Pro — 6 Months'});
+PRODUCTS.push({id:41,name:'Claude Pro',category:'AI Tools',price:19.99,seller:'AI Vault',title:'Claude Pro — 1 Month'});
+PRODUCTS.push({id:42,name:'Claude Pro',category:'AI Tools',price:199.90,seller:'AI Vault',title:'Claude Pro — 1 Year'});
+PRODUCTS.push({id:43,name:'Claude Pro',category:'AI Tools',price:56.97,seller:'AI Vault',title:'Claude Pro — 3 Months'});
+PRODUCTS.push({id:44,name:'Claude Pro',category:'AI Tools',price:107.85,seller:'AI Vault',title:'Claude Pro — 6 Months'});
+PRODUCTS.push({id:45,name:'Codeium Pro',category:'AI Tools',price:7.99,seller:'AI Vault',title:'Codeium Pro — 1 Month'});
+PRODUCTS.push({id:46,name:'Codeium Pro',category:'AI Tools',price:79.90,seller:'AI Vault',title:'Codeium Pro — 1 Year'});
+PRODUCTS.push({id:47,name:'Codeium Pro',category:'AI Tools',price:22.77,seller:'AI Vault',title:'Codeium Pro — 3 Months'});
+PRODUCTS.push({id:48,name:'Codeium Pro',category:'AI Tools',price:43.11,seller:'AI Vault',title:'Codeium Pro — 6 Months'});
+PRODUCTS.push({id:49,name:'Copy.ai',category:'AI Tools',price:7.79,seller:'AI Vault',title:'Copy.ai — 1 Month'});
+PRODUCTS.push({id:50,name:'Copy.ai',category:'AI Tools',price:77.90,seller:'AI Vault',title:'Copy.ai — 1 Year'});
+PRODUCTS.push({id:51,name:'Copy.ai',category:'AI Tools',price:22.20,seller:'AI Vault',title:'Copy.ai — 3 Months'});
+PRODUCTS.push({id:52,name:'Copy.ai',category:'AI Tools',price:42.03,seller:'AI Vault',title:'Copy.ai — 6 Months'});
+PRODUCTS.push({id:53,name:'Cursor Pro',category:'AI Tools',price:20.00,seller:'AI Vault',title:'Cursor Pro — 1 Month'});
+PRODUCTS.push({id:54,name:'Cursor Pro',category:'AI Tools',price:200.00,seller:'AI Vault',title:'Cursor Pro — 1 Year'});
+PRODUCTS.push({id:55,name:'Cursor Pro',category:'AI Tools',price:57.00,seller:'AI Vault',title:'Cursor Pro — 3 Months'});
+PRODUCTS.push({id:56,name:'Cursor Pro',category:'AI Tools',price:107.90,seller:'AI Vault',title:'Cursor Pro — 6 Months'});
+PRODUCTS.push({id:57,name:'Cursor Ultra',category:'AI Tools',price:9.79,seller:'AI Vault',title:'Cursor Ultra — 1 Month'});
+PRODUCTS.push({id:58,name:'Cursor Ultra',category:'AI Tools',price:97.90,seller:'AI Vault',title:'Cursor Ultra — 1 Year'});
+PRODUCTS.push({id:59,name:'Cursor Ultra',category:'AI Tools',price:27.90,seller:'AI Vault',title:'Cursor Ultra — 3 Months'});
+PRODUCTS.push({id:60,name:'Cursor Ultra',category:'AI Tools',price:52.82,seller:'AI Vault',title:'Cursor Ultra — 6 Months'});
+PRODUCTS.push({id:61,name:'DeepL Pro',category:'AI Tools',price:8.59,seller:'AI Vault',title:'DeepL Pro — 1 Month'});
+PRODUCTS.push({id:62,name:'DeepL Pro',category:'AI Tools',price:85.90,seller:'AI Vault',title:'DeepL Pro — 1 Year'});
+PRODUCTS.push({id:63,name:'DeepL Pro',category:'AI Tools',price:24.48,seller:'AI Vault',title:'DeepL Pro — 3 Months'});
+PRODUCTS.push({id:64,name:'DeepL Pro',category:'AI Tools',price:46.34,seller:'AI Vault',title:'DeepL Pro — 6 Months'});
+PRODUCTS.push({id:65,name:'DeepSeek Pro',category:'AI Tools',price:7.49,seller:'AI Vault',title:'DeepSeek Pro — 1 Month'});
+PRODUCTS.push({id:66,name:'DeepSeek Pro',category:'AI Tools',price:74.90,seller:'AI Vault',title:'DeepSeek Pro — 1 Year'});
+PRODUCTS.push({id:67,name:'DeepSeek Pro',category:'AI Tools',price:21.35,seller:'AI Vault',title:'DeepSeek Pro — 3 Months'});
+PRODUCTS.push({id:68,name:'DeepSeek Pro',category:'AI Tools',price:40.41,seller:'AI Vault',title:'DeepSeek Pro — 6 Months'});
+PRODUCTS.push({id:69,name:'Descript',category:'AI Tools',price:8.19,seller:'AI Vault',title:'Descript — 1 Month'});
+PRODUCTS.push({id:70,name:'Descript',category:'AI Tools',price:81.90,seller:'AI Vault',title:'Descript — 1 Year'});
+PRODUCTS.push({id:71,name:'Descript',category:'AI Tools',price:23.34,seller:'AI Vault',title:'Descript — 3 Months'});
+PRODUCTS.push({id:72,name:'Descript',category:'AI Tools',price:44.19,seller:'AI Vault',title:'Descript — 6 Months'});
+PRODUCTS.push({id:73,name:'ElevenLabs',category:'AI Tools',price:8.99,seller:'AI Vault',title:'ElevenLabs — 1 Month'});
+PRODUCTS.push({id:74,name:'ElevenLabs',category:'AI Tools',price:89.90,seller:'AI Vault',title:'ElevenLabs — 1 Year'});
+PRODUCTS.push({id:75,name:'ElevenLabs',category:'AI Tools',price:25.62,seller:'AI Vault',title:'ElevenLabs — 3 Months'});
+PRODUCTS.push({id:76,name:'ElevenLabs',category:'AI Tools',price:48.50,seller:'AI Vault',title:'ElevenLabs — 6 Months'});
+PRODUCTS.push({id:77,name:'Figma Professional',category:'AI Tools',price:12.19,seller:'AI Vault',title:'Figma Professional — 1 Month'});
+PRODUCTS.push({id:78,name:'Figma Professional',category:'AI Tools',price:121.90,seller:'AI Vault',title:'Figma Professional — 1 Year'});
+PRODUCTS.push({id:79,name:'Figma Professional',category:'AI Tools',price:34.74,seller:'AI Vault',title:'Figma Professional — 3 Months'});
+PRODUCTS.push({id:80,name:'Figma Professional',category:'AI Tools',price:65.77,seller:'AI Vault',title:'Figma Professional — 6 Months'});
+PRODUCTS.push({id:81,name:'Framer',category:'AI Tools',price:7.39,seller:'AI Vault',title:'Framer — 1 Month'});
+PRODUCTS.push({id:82,name:'Framer',category:'AI Tools',price:73.90,seller:'AI Vault',title:'Framer — 1 Year'});
+PRODUCTS.push({id:83,name:'Framer',category:'AI Tools',price:21.06,seller:'AI Vault',title:'Framer — 3 Months'});
+PRODUCTS.push({id:84,name:'Framer',category:'AI Tools',price:39.87,seller:'AI Vault',title:'Framer — 6 Months'});
+PRODUCTS.push({id:85,name:'Gamma',category:'AI Tools',price:6.99,seller:'AI Vault',title:'Gamma — 1 Month'});
+PRODUCTS.push({id:86,name:'Gamma',category:'AI Tools',price:69.90,seller:'AI Vault',title:'Gamma — 1 Year'});
+PRODUCTS.push({id:87,name:'Gamma',category:'AI Tools',price:19.92,seller:'AI Vault',title:'Gamma — 3 Months'});
+PRODUCTS.push({id:88,name:'Gamma',category:'AI Tools',price:37.71,seller:'AI Vault',title:'Gamma — 6 Months'});
+PRODUCTS.push({id:89,name:'Gemini Advanced',category:'AI Tools',price:10.99,seller:'AI Vault',title:'Gemini Advanced — 1 Month'});
+PRODUCTS.push({id:90,name:'Gemini Advanced',category:'AI Tools',price:109.90,seller:'AI Vault',title:'Gemini Advanced — 1 Year'});
+PRODUCTS.push({id:91,name:'Gemini Advanced',category:'AI Tools',price:31.32,seller:'AI Vault',title:'Gemini Advanced — 3 Months'});
+PRODUCTS.push({id:92,name:'Gemini Advanced',category:'AI Tools',price:59.29,seller:'AI Vault',title:'Gemini Advanced — 6 Months'});
+PRODUCTS.push({id:93,name:'GitHub Copilot Pro',category:'AI Tools',price:12.19,seller:'AI Vault',title:'GitHub Copilot Pro — 1 Month'});
+PRODUCTS.push({id:94,name:'GitHub Copilot Pro',category:'AI Tools',price:121.90,seller:'AI Vault',title:'GitHub Copilot Pro — 1 Year'});
+PRODUCTS.push({id:95,name:'GitHub Copilot Pro',category:'AI Tools',price:34.74,seller:'AI Vault',title:'GitHub Copilot Pro — 3 Months'});
+PRODUCTS.push({id:96,name:'GitHub Copilot Pro',category:'AI Tools',price:65.77,seller:'AI Vault',title:'GitHub Copilot Pro — 6 Months'});
+PRODUCTS.push({id:97,name:'Google AI Pro',category:'AI Tools',price:12.99,seller:'AI Vault',title:'Google AI Pro — 1 Month'});
+PRODUCTS.push({id:98,name:'Google AI Pro',category:'AI Tools',price:129.90,seller:'AI Vault',title:'Google AI Pro — 1 Year'});
+PRODUCTS.push({id:99,name:'Google AI Pro',category:'AI Tools',price:37.02,seller:'AI Vault',title:'Google AI Pro — 3 Months'});
+PRODUCTS.push({id:100,name:'Google AI Pro',category:'AI Tools',price:70.08,seller:'AI Vault',title:'Google AI Pro — 6 Months'});
+PRODUCTS.push({id:101,name:'Grammarly Premium',category:'AI Tools',price:11.79,seller:'AI Vault',title:'Grammarly Premium — 1 Month'});
+PRODUCTS.push({id:102,name:'Grammarly Premium',category:'AI Tools',price:117.90,seller:'AI Vault',title:'Grammarly Premium — 1 Year'});
+PRODUCTS.push({id:103,name:'Grammarly Premium',category:'AI Tools',price:33.60,seller:'AI Vault',title:'Grammarly Premium — 3 Months'});
+PRODUCTS.push({id:104,name:'Grammarly Premium',category:'AI Tools',price:63.61,seller:'AI Vault',title:'Grammarly Premium — 6 Months'});
+PRODUCTS.push({id:105,name:'Grok (xAI)',category:'AI Tools',price:9.99,seller:'AI Vault',title:'Grok (xAI) — 1 Month'});
+PRODUCTS.push({id:106,name:'Grok (xAI)',category:'AI Tools',price:99.90,seller:'AI Vault',title:'Grok (xAI) — 1 Year'});
+PRODUCTS.push({id:107,name:'Grok (xAI)',category:'AI Tools',price:28.47,seller:'AI Vault',title:'Grok (xAI) — 3 Months'});
+PRODUCTS.push({id:108,name:'Grok (xAI)',category:'AI Tools',price:53.90,seller:'AI Vault',title:'Grok (xAI) — 6 Months'});
+PRODUCTS.push({id:109,name:'HeyGen',category:'AI Tools',price:7.39,seller:'AI Vault',title:'HeyGen — 1 Month'});
+PRODUCTS.push({id:110,name:'HeyGen',category:'AI Tools',price:73.90,seller:'AI Vault',title:'HeyGen — 1 Year'});
+PRODUCTS.push({id:111,name:'HeyGen',category:'AI Tools',price:21.06,seller:'AI Vault',title:'HeyGen — 3 Months'});
+PRODUCTS.push({id:112,name:'HeyGen',category:'AI Tools',price:39.87,seller:'AI Vault',title:'HeyGen — 6 Months'});
+PRODUCTS.push({id:113,name:'Higgsfield',category:'AI Tools',price:8.99,seller:'AI Vault',title:'Higgsfield — 1 Month'});
+PRODUCTS.push({id:114,name:'Higgsfield',category:'AI Tools',price:89.90,seller:'AI Vault',title:'Higgsfield — 1 Year'});
+PRODUCTS.push({id:115,name:'Higgsfield',category:'AI Tools',price:25.62,seller:'AI Vault',title:'Higgsfield — 3 Months'});
+PRODUCTS.push({id:116,name:'Higgsfield',category:'AI Tools',price:48.50,seller:'AI Vault',title:'Higgsfield — 6 Months'});
+PRODUCTS.push({id:117,name:'Ideogram',category:'AI Tools',price:8.19,seller:'AI Vault',title:'Ideogram — 1 Month'});
+PRODUCTS.push({id:118,name:'Ideogram',category:'AI Tools',price:81.90,seller:'AI Vault',title:'Ideogram — 1 Year'});
+PRODUCTS.push({id:119,name:'Ideogram',category:'AI Tools',price:23.34,seller:'AI Vault',title:'Ideogram — 3 Months'});
+PRODUCTS.push({id:120,name:'Ideogram',category:'AI Tools',price:44.19,seller:'AI Vault',title:'Ideogram — 6 Months'});
+PRODUCTS.push({id:121,name:'InVideo AI',category:'AI Tools',price:8.99,seller:'AI Vault',title:'InVideo AI — 1 Month'});
+PRODUCTS.push({id:122,name:'InVideo AI',category:'AI Tools',price:89.90,seller:'AI Vault',title:'InVideo AI — 1 Year'});
+PRODUCTS.push({id:123,name:'InVideo AI',category:'AI Tools',price:25.62,seller:'AI Vault',title:'InVideo AI — 3 Months'});
+PRODUCTS.push({id:124,name:'InVideo AI',category:'AI Tools',price:48.50,seller:'AI Vault',title:'InVideo AI — 6 Months'});
+PRODUCTS.push({id:125,name:'Jasper AI',category:'AI Tools',price:8.59,seller:'AI Vault',title:'Jasper AI — 1 Month'});
+PRODUCTS.push({id:126,name:'Jasper AI',category:'AI Tools',price:85.90,seller:'AI Vault',title:'Jasper AI — 1 Year'});
+PRODUCTS.push({id:127,name:'Jasper AI',category:'AI Tools',price:24.48,seller:'AI Vault',title:'Jasper AI — 3 Months'});
+PRODUCTS.push({id:128,name:'Jasper AI',category:'AI Tools',price:46.34,seller:'AI Vault',title:'Jasper AI — 6 Months'});
+PRODUCTS.push({id:129,name:'Kling AI',category:'AI Tools',price:8.19,seller:'AI Vault',title:'Kling AI — 1 Month'});
+PRODUCTS.push({id:130,name:'Kling AI',category:'AI Tools',price:81.90,seller:'AI Vault',title:'Kling AI — 1 Year'});
+PRODUCTS.push({id:131,name:'Kling AI',category:'AI Tools',price:23.34,seller:'AI Vault',title:'Kling AI — 3 Months'});
+PRODUCTS.push({id:132,name:'Kling AI',category:'AI Tools',price:44.19,seller:'AI Vault',title:'Kling AI — 6 Months'});
+PRODUCTS.push({id:133,name:'Krea AI',category:'AI Tools',price:7.79,seller:'AI Vault',title:'Krea AI — 1 Month'});
+PRODUCTS.push({id:134,name:'Krea AI',category:'AI Tools',price:77.90,seller:'AI Vault',title:'Krea AI — 1 Year'});
+PRODUCTS.push({id:135,name:'Krea AI',category:'AI Tools',price:22.20,seller:'AI Vault',title:'Krea AI — 3 Months'});
+PRODUCTS.push({id:136,name:'Krea AI',category:'AI Tools',price:42.03,seller:'AI Vault',title:'Krea AI — 6 Months'});
+PRODUCTS.push({id:137,name:'Leonardo AI',category:'AI Tools',price:9.39,seller:'AI Vault',title:'Leonardo AI — 1 Month'});
+PRODUCTS.push({id:138,name:'Leonardo AI',category:'AI Tools',price:93.90,seller:'AI Vault',title:'Leonardo AI — 1 Year'});
+PRODUCTS.push({id:139,name:'Leonardo AI',category:'AI Tools',price:26.76,seller:'AI Vault',title:'Leonardo AI — 3 Months'});
+PRODUCTS.push({id:140,name:'Leonardo AI',category:'AI Tools',price:50.66,seller:'AI Vault',title:'Leonardo AI — 6 Months'});
+PRODUCTS.push({id:141,name:'Lovable',category:'AI Tools',price:7.79,seller:'AI Vault',title:'Lovable — 1 Month'});
+PRODUCTS.push({id:142,name:'Lovable',category:'AI Tools',price:77.90,seller:'AI Vault',title:'Lovable — 1 Year'});
+PRODUCTS.push({id:143,name:'Lovable',category:'AI Tools',price:22.20,seller:'AI Vault',title:'Lovable — 3 Months'});
+PRODUCTS.push({id:144,name:'Lovable',category:'AI Tools',price:42.03,seller:'AI Vault',title:'Lovable — 6 Months'});
+PRODUCTS.push({id:145,name:'Luma Dream Machine',category:'AI Tools',price:12.19,seller:'AI Vault',title:'Luma Dream Machine — 1 Month'});
+PRODUCTS.push({id:146,name:'Luma Dream Machine',category:'AI Tools',price:121.90,seller:'AI Vault',title:'Luma Dream Machine — 1 Year'});
+PRODUCTS.push({id:147,name:'Luma Dream Machine',category:'AI Tools',price:34.74,seller:'AI Vault',title:'Luma Dream Machine — 3 Months'});
+PRODUCTS.push({id:148,name:'Luma Dream Machine',category:'AI Tools',price:65.77,seller:'AI Vault',title:'Luma Dream Machine — 6 Months'});
+PRODUCTS.push({id:149,name:'Magnific AI',category:'AI Tools',price:9.39,seller:'AI Vault',title:'Magnific AI — 1 Month'});
+PRODUCTS.push({id:150,name:'Magnific AI',category:'AI Tools',price:93.90,seller:'AI Vault',title:'Magnific AI — 1 Year'});
+PRODUCTS.push({id:151,name:'Magnific AI',category:'AI Tools',price:26.76,seller:'AI Vault',title:'Magnific AI — 3 Months'});
+PRODUCTS.push({id:152,name:'Magnific AI',category:'AI Tools',price:50.66,seller:'AI Vault',title:'Magnific AI — 6 Months'});
+PRODUCTS.push({id:153,name:'Manus AI',category:'AI Tools',price:9.99,seller:'AI Vault',title:'Manus AI — 1 Month'});
+PRODUCTS.push({id:154,name:'Manus AI',category:'AI Tools',price:99.90,seller:'AI Vault',title:'Manus AI — 1 Year'});
+PRODUCTS.push({id:155,name:'Manus AI',category:'AI Tools',price:28.47,seller:'AI Vault',title:'Manus AI — 3 Months'});
+PRODUCTS.push({id:156,name:'Manus AI',category:'AI Tools',price:53.90,seller:'AI Vault',title:'Manus AI — 6 Months'});
+PRODUCTS.push({id:157,name:'Meta AI Premium',category:'AI Tools',price:6.49,seller:'AI Vault',title:'Meta AI Premium — 1 Month'});
+PRODUCTS.push({id:158,name:'Meta AI Premium',category:'AI Tools',price:64.90,seller:'AI Vault',title:'Meta AI Premium — 1 Year'});
+PRODUCTS.push({id:159,name:'Meta AI Premium',category:'AI Tools',price:18.50,seller:'AI Vault',title:'Meta AI Premium — 3 Months'});
+PRODUCTS.push({id:160,name:'Meta AI Premium',category:'AI Tools',price:35.01,seller:'AI Vault',title:'Meta AI Premium — 6 Months'});
+PRODUCTS.push({id:161,name:'Microsoft Copilot Pro',category:'AI Tools',price:13.39,seller:'AI Vault',title:'Microsoft Copilot Pro — 1 Month'});
+PRODUCTS.push({id:162,name:'Microsoft Copilot Pro',category:'AI Tools',price:133.90,seller:'AI Vault',title:'Microsoft Copilot Pro — 1 Year'});
+PRODUCTS.push({id:163,name:'Microsoft Copilot Pro',category:'AI Tools',price:38.16,seller:'AI Vault',title:'Microsoft Copilot Pro — 3 Months'});
+PRODUCTS.push({id:164,name:'Microsoft Copilot Pro',category:'AI Tools',price:72.24,seller:'AI Vault',title:'Microsoft Copilot Pro — 6 Months'});
+PRODUCTS.push({id:165,name:'Midjourney',category:'AI Tools',price:18.00,seller:'AI Vault',title:'Midjourney — 1 Month'});
+PRODUCTS.push({id:166,name:'Midjourney',category:'AI Tools',price:180.00,seller:'AI Vault',title:'Midjourney — 1 Year'});
+PRODUCTS.push({id:167,name:'Midjourney',category:'AI Tools',price:51.30,seller:'AI Vault',title:'Midjourney — 3 Months'});
+PRODUCTS.push({id:168,name:'Midjourney',category:'AI Tools',price:97.11,seller:'AI Vault',title:'Midjourney — 6 Months'});
+PRODUCTS.push({id:169,name:'Notion AI',category:'AI Tools',price:8.59,seller:'AI Vault',title:'Notion AI — 1 Month'});
+PRODUCTS.push({id:170,name:'Notion AI',category:'AI Tools',price:85.90,seller:'AI Vault',title:'Notion AI — 1 Year'});
+PRODUCTS.push({id:171,name:'Notion AI',category:'AI Tools',price:24.48,seller:'AI Vault',title:'Notion AI — 3 Months'});
+PRODUCTS.push({id:172,name:'Notion AI',category:'AI Tools',price:46.34,seller:'AI Vault',title:'Notion AI — 6 Months'});
+PRODUCTS.push({id:173,name:'OpusClip',category:'AI Tools',price:8.19,seller:'AI Vault',title:'OpusClip — 1 Month'});
+PRODUCTS.push({id:174,name:'OpusClip',category:'AI Tools',price:81.90,seller:'AI Vault',title:'OpusClip — 1 Year'});
+PRODUCTS.push({id:175,name:'OpusClip',category:'AI Tools',price:23.34,seller:'AI Vault',title:'OpusClip — 3 Months'});
+PRODUCTS.push({id:176,name:'OpusClip',category:'AI Tools',price:44.19,seller:'AI Vault',title:'OpusClip — 6 Months'});
+PRODUCTS.push({id:177,name:'Otter.ai',category:'AI Tools',price:8.19,seller:'AI Vault',title:'Otter.ai — 1 Month'});
+PRODUCTS.push({id:178,name:'Otter.ai',category:'AI Tools',price:81.90,seller:'AI Vault',title:'Otter.ai — 1 Year'});
+PRODUCTS.push({id:179,name:'Otter.ai',category:'AI Tools',price:23.34,seller:'AI Vault',title:'Otter.ai — 3 Months'});
+PRODUCTS.push({id:180,name:'Otter.ai',category:'AI Tools',price:44.19,seller:'AI Vault',title:'Otter.ai — 6 Months'});
+PRODUCTS.push({id:181,name:'Perplexity Pro',category:'AI Tools',price:10.59,seller:'AI Vault',title:'Perplexity Pro — 1 Month'});
+PRODUCTS.push({id:182,name:'Perplexity Pro',category:'AI Tools',price:105.90,seller:'AI Vault',title:'Perplexity Pro — 1 Year'});
+PRODUCTS.push({id:183,name:'Perplexity Pro',category:'AI Tools',price:30.18,seller:'AI Vault',title:'Perplexity Pro — 3 Months'});
+PRODUCTS.push({id:184,name:'Perplexity Pro',category:'AI Tools',price:57.13,seller:'AI Vault',title:'Perplexity Pro — 6 Months'});
+PRODUCTS.push({id:185,name:'Photoroom Pro',category:'AI Tools',price:10.19,seller:'AI Vault',title:'Photoroom Pro — 1 Month'});
+PRODUCTS.push({id:186,name:'Photoroom Pro',category:'AI Tools',price:101.90,seller:'AI Vault',title:'Photoroom Pro — 1 Year'});
+PRODUCTS.push({id:187,name:'Photoroom Pro',category:'AI Tools',price:29.04,seller:'AI Vault',title:'Photoroom Pro — 3 Months'});
+PRODUCTS.push({id:188,name:'Photoroom Pro',category:'AI Tools',price:54.98,seller:'AI Vault',title:'Photoroom Pro — 6 Months'});
+PRODUCTS.push({id:189,name:'Pika',category:'AI Tools',price:6.59,seller:'AI Vault',title:'Pika — 1 Month'});
+PRODUCTS.push({id:190,name:'Pika',category:'AI Tools',price:65.90,seller:'AI Vault',title:'Pika — 1 Year'});
+PRODUCTS.push({id:191,name:'Pika',category:'AI Tools',price:18.78,seller:'AI Vault',title:'Pika — 3 Months'});
+PRODUCTS.push({id:192,name:'Pika',category:'AI Tools',price:35.55,seller:'AI Vault',title:'Pika — 6 Months'});
+PRODUCTS.push({id:193,name:'Poe',category:'AI Tools',price:7.99,seller:'AI Vault',title:'Poe — 1 Month'});
+PRODUCTS.push({id:194,name:'Poe',category:'AI Tools',price:79.90,seller:'AI Vault',title:'Poe — 1 Year'});
+PRODUCTS.push({id:195,name:'Poe',category:'AI Tools',price:22.77,seller:'AI Vault',title:'Poe — 3 Months'});
+PRODUCTS.push({id:196,name:'Poe',category:'AI Tools',price:43.11,seller:'AI Vault',title:'Poe — 6 Months'});
+PRODUCTS.push({id:197,name:'QuillBot Premium',category:'AI Tools',price:11.39,seller:'AI Vault',title:'QuillBot Premium — 1 Month'});
+PRODUCTS.push({id:198,name:'QuillBot Premium',category:'AI Tools',price:113.90,seller:'AI Vault',title:'QuillBot Premium — 1 Year'});
+PRODUCTS.push({id:199,name:'QuillBot Premium',category:'AI Tools',price:32.46,seller:'AI Vault',title:'QuillBot Premium — 3 Months'});
+PRODUCTS.push({id:200,name:'QuillBot Premium',category:'AI Tools',price:61.45,seller:'AI Vault',title:'QuillBot Premium — 6 Months'});
+PRODUCTS.push({id:201,name:'Recraft',category:'AI Tools',price:7.79,seller:'AI Vault',title:'Recraft — 1 Month'});
+PRODUCTS.push({id:202,name:'Recraft',category:'AI Tools',price:77.90,seller:'AI Vault',title:'Recraft — 1 Year'});
+PRODUCTS.push({id:203,name:'Recraft',category:'AI Tools',price:22.20,seller:'AI Vault',title:'Recraft — 3 Months'});
+PRODUCTS.push({id:204,name:'Recraft',category:'AI Tools',price:42.03,seller:'AI Vault',title:'Recraft — 6 Months'});
+PRODUCTS.push({id:205,name:'Remove.bg',category:'AI Tools',price:8.59,seller:'AI Vault',title:'Remove.bg — 1 Month'});
+PRODUCTS.push({id:206,name:'Remove.bg',category:'AI Tools',price:85.90,seller:'AI Vault',title:'Remove.bg — 1 Year'});
+PRODUCTS.push({id:207,name:'Remove.bg',category:'AI Tools',price:24.48,seller:'AI Vault',title:'Remove.bg — 3 Months'});
+PRODUCTS.push({id:208,name:'Remove.bg',category:'AI Tools',price:46.34,seller:'AI Vault',title:'Remove.bg — 6 Months'});
+PRODUCTS.push({id:209,name:'Replit Core',category:'AI Tools',price:9.39,seller:'AI Vault',title:'Replit Core — 1 Month'});
+PRODUCTS.push({id:210,name:'Replit Core',category:'AI Tools',price:93.90,seller:'AI Vault',title:'Replit Core — 1 Year'});
+PRODUCTS.push({id:211,name:'Replit Core',category:'AI Tools',price:26.76,seller:'AI Vault',title:'Replit Core — 3 Months'});
+PRODUCTS.push({id:212,name:'Replit Core',category:'AI Tools',price:50.66,seller:'AI Vault',title:'Replit Core — 6 Months'});
+PRODUCTS.push({id:213,name:'Runway',category:'AI Tools',price:7.39,seller:'AI Vault',title:'Runway — 1 Month'});
+PRODUCTS.push({id:214,name:'Runway',category:'AI Tools',price:73.90,seller:'AI Vault',title:'Runway — 1 Year'});
+PRODUCTS.push({id:215,name:'Runway',category:'AI Tools',price:21.06,seller:'AI Vault',title:'Runway — 3 Months'});
+PRODUCTS.push({id:216,name:'Runway',category:'AI Tools',price:39.87,seller:'AI Vault',title:'Runway — 6 Months'});
+PRODUCTS.push({id:217,name:'Sora',category:'AI Tools',price:13.99,seller:'AI Vault',title:'Sora — 1 Month'});
+PRODUCTS.push({id:218,name:'Sora',category:'AI Tools',price:139.90,seller:'AI Vault',title:'Sora — 1 Year'});
+PRODUCTS.push({id:219,name:'Sora',category:'AI Tools',price:39.87,seller:'AI Vault',title:'Sora — 3 Months'});
+PRODUCTS.push({id:220,name:'Sora',category:'AI Tools',price:75.48,seller:'AI Vault',title:'Sora — 6 Months'});
+PRODUCTS.push({id:221,name:'Suno',category:'AI Tools',price:6.59,seller:'AI Vault',title:'Suno — 1 Month'});
+PRODUCTS.push({id:222,name:'Suno',category:'AI Tools',price:65.90,seller:'AI Vault',title:'Suno — 1 Year'});
+PRODUCTS.push({id:223,name:'Suno',category:'AI Tools',price:18.78,seller:'AI Vault',title:'Suno — 3 Months'});
+PRODUCTS.push({id:224,name:'Suno',category:'AI Tools',price:35.55,seller:'AI Vault',title:'Suno — 6 Months'});
+PRODUCTS.push({id:225,name:'Synthesia',category:'AI Tools',price:8.59,seller:'AI Vault',title:'Synthesia — 1 Month'});
+PRODUCTS.push({id:226,name:'Synthesia',category:'AI Tools',price:85.90,seller:'AI Vault',title:'Synthesia — 1 Year'});
+PRODUCTS.push({id:227,name:'Synthesia',category:'AI Tools',price:24.48,seller:'AI Vault',title:'Synthesia — 3 Months'});
+PRODUCTS.push({id:228,name:'Synthesia',category:'AI Tools',price:46.34,seller:'AI Vault',title:'Synthesia — 6 Months'});
+PRODUCTS.push({id:229,name:'Tabnine Pro',category:'AI Tools',price:8.49,seller:'AI Vault',title:'Tabnine Pro — 1 Month'});
+PRODUCTS.push({id:230,name:'Tabnine Pro',category:'AI Tools',price:84.90,seller:'AI Vault',title:'Tabnine Pro — 1 Year'});
+PRODUCTS.push({id:231,name:'Tabnine Pro',category:'AI Tools',price:24.20,seller:'AI Vault',title:'Tabnine Pro — 3 Months'});
+PRODUCTS.push({id:232,name:'Tabnine Pro',category:'AI Tools',price:45.80,seller:'AI Vault',title:'Tabnine Pro — 6 Months'});
+PRODUCTS.push({id:233,name:'Tome',category:'AI Tools',price:6.59,seller:'AI Vault',title:'Tome — 1 Month'});
+PRODUCTS.push({id:234,name:'Tome',category:'AI Tools',price:65.90,seller:'AI Vault',title:'Tome — 1 Year'});
+PRODUCTS.push({id:235,name:'Tome',category:'AI Tools',price:18.78,seller:'AI Vault',title:'Tome — 3 Months'});
+PRODUCTS.push({id:236,name:'Tome',category:'AI Tools',price:35.55,seller:'AI Vault',title:'Tome — 6 Months'});
+PRODUCTS.push({id:237,name:'Topaz Photo AI',category:'AI Tools',price:10.59,seller:'AI Vault',title:'Topaz Photo AI — 1 Month'});
+PRODUCTS.push({id:238,name:'Topaz Photo AI',category:'AI Tools',price:105.90,seller:'AI Vault',title:'Topaz Photo AI — 1 Year'});
+PRODUCTS.push({id:239,name:'Topaz Photo AI',category:'AI Tools',price:30.18,seller:'AI Vault',title:'Topaz Photo AI — 3 Months'});
+PRODUCTS.push({id:240,name:'Topaz Photo AI',category:'AI Tools',price:57.13,seller:'AI Vault',title:'Topaz Photo AI — 6 Months'});
+PRODUCTS.push({id:241,name:'Topaz Video AI',category:'AI Tools',price:10.59,seller:'AI Vault',title:'Topaz Video AI — 1 Month'});
+PRODUCTS.push({id:242,name:'Topaz Video AI',category:'AI Tools',price:105.90,seller:'AI Vault',title:'Topaz Video AI — 1 Year'});
+PRODUCTS.push({id:243,name:'Topaz Video AI',category:'AI Tools',price:30.18,seller:'AI Vault',title:'Topaz Video AI — 3 Months'});
+PRODUCTS.push({id:244,name:'Topaz Video AI',category:'AI Tools',price:57.13,seller:'AI Vault',title:'Topaz Video AI — 6 Months'});
+PRODUCTS.push({id:245,name:'Udio',category:'AI Tools',price:6.59,seller:'AI Vault',title:'Udio — 1 Month'});
+PRODUCTS.push({id:246,name:'Udio',category:'AI Tools',price:65.90,seller:'AI Vault',title:'Udio — 1 Year'});
+PRODUCTS.push({id:247,name:'Udio',category:'AI Tools',price:18.78,seller:'AI Vault',title:'Udio — 3 Months'});
+PRODUCTS.push({id:248,name:'Udio',category:'AI Tools',price:35.55,seller:'AI Vault',title:'Udio — 6 Months'});
+PRODUCTS.push({id:249,name:'VEED',category:'AI Tools',price:6.59,seller:'AI Vault',title:'VEED — 1 Month'});
+PRODUCTS.push({id:250,name:'VEED',category:'AI Tools',price:65.90,seller:'AI Vault',title:'VEED — 1 Year'});
+PRODUCTS.push({id:251,name:'VEED',category:'AI Tools',price:18.78,seller:'AI Vault',title:'VEED — 3 Months'});
+PRODUCTS.push({id:252,name:'VEED',category:'AI Tools',price:35.55,seller:'AI Vault',title:'VEED — 6 Months'});
+PRODUCTS.push({id:253,name:'Warp AI Terminal',category:'AI Tools',price:6.99,seller:'AI Vault',title:'Warp AI Terminal — 1 Month'});
+PRODUCTS.push({id:254,name:'Warp AI Terminal',category:'AI Tools',price:69.90,seller:'AI Vault',title:'Warp AI Terminal — 1 Year'});
+PRODUCTS.push({id:255,name:'Warp AI Terminal',category:'AI Tools',price:19.92,seller:'AI Vault',title:'Warp AI Terminal — 3 Months'});
+PRODUCTS.push({id:256,name:'Warp AI Terminal',category:'AI Tools',price:37.71,seller:'AI Vault',title:'Warp AI Terminal — 6 Months'});
+PRODUCTS.push({id:257,name:'Windsurf Pro',category:'AI Tools',price:9.79,seller:'AI Vault',title:'Windsurf Pro — 1 Month'});
+PRODUCTS.push({id:258,name:'Windsurf Pro',category:'AI Tools',price:97.90,seller:'AI Vault',title:'Windsurf Pro — 1 Year'});
+PRODUCTS.push({id:259,name:'Windsurf Pro',category:'AI Tools',price:27.90,seller:'AI Vault',title:'Windsurf Pro — 3 Months'});
+PRODUCTS.push({id:260,name:'Windsurf Pro',category:'AI Tools',price:52.82,seller:'AI Vault',title:'Windsurf Pro — 6 Months'});
+PRODUCTS.push({id:261,name:'Writesonic',category:'AI Tools',price:8.99,seller:'AI Vault',title:'Writesonic — 1 Month'});
+PRODUCTS.push({id:262,name:'Writesonic',category:'AI Tools',price:89.90,seller:'AI Vault',title:'Writesonic — 1 Year'});
+PRODUCTS.push({id:263,name:'Writesonic',category:'AI Tools',price:25.62,seller:'AI Vault',title:'Writesonic — 3 Months'});
+PRODUCTS.push({id:264,name:'Writesonic',category:'AI Tools',price:48.50,seller:'AI Vault',title:'Writesonic — 6 Months'});
+PRODUCTS.push({id:265,name:'You.com Pro',category:'AI Tools',price:8.49,seller:'AI Vault',title:'You.com Pro — 1 Month'});
+PRODUCTS.push({id:266,name:'You.com Pro',category:'AI Tools',price:84.90,seller:'AI Vault',title:'You.com Pro — 1 Year'});
+PRODUCTS.push({id:267,name:'You.com Pro',category:'AI Tools',price:24.20,seller:'AI Vault',title:'You.com Pro — 3 Months'});
+PRODUCTS.push({id:268,name:'You.com Pro',category:'AI Tools',price:45.80,seller:'AI Vault',title:'You.com Pro — 6 Months'});
+PRODUCTS.push({id:269,name:'v0',category:'AI Tools',price:5.79,seller:'AI Vault',title:'v0 — 1 Month'});
+PRODUCTS.push({id:270,name:'v0',category:'AI Tools',price:57.90,seller:'AI Vault',title:'v0 — 1 Year'});
+PRODUCTS.push({id:271,name:'v0',category:'AI Tools',price:16.50,seller:'AI Vault',title:'v0 — 3 Months'});
+PRODUCTS.push({id:272,name:'v0',category:'AI Tools',price:31.24,seller:'AI Vault',title:'v0 — 6 Months'});
+PRODUCTS.push({id:327,name:'AliExpress Discount Coupon',category:'Coupons & Savings',price:2.99,seller:'SaveMore',title:'AliExpress Discount Coupon'});
+PRODUCTS.push({id:328,name:'Amazon Promo Credit',category:'Coupons & Savings',price:5.99,seller:'SaveMore',title:'Amazon Promo Credit'});
+PRODUCTS.push({id:329,name:'Booking.com Discount Voucher',category:'Coupons & Savings',price:4.99,seller:'SaveMore',title:'Booking.com Discount Voucher'});
+PRODUCTS.push({id:330,name:'Nike Discount Code',category:'Coupons & Savings',price:3.99,seller:'SaveMore',title:'Nike Discount Code'});
+PRODUCTS.push({id:331,name:'Udemy Course Coupon',category:'Coupons & Savings',price:3.49,seller:'SaveMore',title:'Udemy Course Coupon'});
+PRODUCTS.push({id:358,name:'Premium Figma UI Kit',category:'Digital Products',price:24.00,seller:'DesignForge',title:'Premium Figma UI Kit'});
+PRODUCTS.push({id:393,name:'COD Points',category:'Game Currency',price:4.99,seller:'TopUp Zone',title:'COD Points'});
+PRODUCTS.push({id:394,name:'Diablo IV Platinum',category:'Game Currency',price:7.39,seller:'TopUp Zone',title:'Diablo IV Platinum'});
+PRODUCTS.push({id:395,name:'EA FC Points',category:'Game Currency',price:5.59,seller:'TopUp Zone',title:'EA FC Points'});
+PRODUCTS.push({id:396,name:'Fortnite V-Bucks',category:'Game Currency',price:6.79,seller:'TopUp Zone',title:'Fortnite V-Bucks'});
+PRODUCTS.push({id:397,name:'Fortnite V-Bucks 2800',category:'Game Currency',price:21.99,seller:'TopUp Zone',title:'Fortnite V-Bucks 2800'});
+PRODUCTS.push({id:398,name:'Free Fire Diamonds',category:'Game Currency',price:7.39,seller:'TopUp Zone',title:'Free Fire Diamonds'});
+PRODUCTS.push({id:399,name:'Genshin Genesis Crystals',category:'Game Currency',price:9.19,seller:'TopUp Zone',title:'Genshin Genesis Crystals'});
+PRODUCTS.push({id:400,name:'Honkai: Star Rail Oneiric Shards',category:'Game Currency',price:11.59,seller:'TopUp Zone',title:'Honkai: Star Rail Oneiric Shards'});
+PRODUCTS.push({id:401,name:'League of Legends RP',category:'Game Currency',price:7.99,seller:'TopUp Zone',title:'League of Legends RP'});
+PRODUCTS.push({id:402,name:'Lost Ark Gold',category:'Game Currency',price:5.89,seller:'TopUp Zone',title:'Lost Ark Gold'});
+PRODUCTS.push({id:403,name:'Mobile Legends Diamonds',category:'Game Currency',price:8.89,seller:'TopUp Zone',title:'Mobile Legends Diamonds'});
+PRODUCTS.push({id:404,name:'New World Gold',category:'Game Currency',price:6.19,seller:'TopUp Zone',title:'New World Gold'});
+PRODUCTS.push({id:405,name:'PUBG Mobile UC',category:'Game Currency',price:6.19,seller:'TopUp Zone',title:'PUBG Mobile UC'});
+PRODUCTS.push({id:406,name:'Path of Exile Currency',category:'Game Currency',price:8.59,seller:'TopUp Zone',title:'Path of Exile Currency'});
+PRODUCTS.push({id:407,name:'Roblox Robux',category:'Game Currency',price:5.59,seller:'TopUp Zone',title:'Roblox Robux'});
+PRODUCTS.push({id:408,name:'Throne and Liberty Lucent',category:'Game Currency',price:9.49,seller:'TopUp Zone',title:'Throne and Liberty Lucent'});
+PRODUCTS.push({id:409,name:'Valorant Points',category:'Game Currency',price:6.49,seller:'TopUp Zone',title:'Valorant Points'});
+PRODUCTS.push({id:410,name:'World of Warcraft Gold',category:'Game Currency',price:8.59,seller:'TopUp Zone',title:'World of Warcraft Gold'});
+PRODUCTS.push({id:428,name:'8 Ball Pool Top-Up — 1 Cash & Coins',category:'Game Top-Up',price:1.90,seller:'TopUp Zone',title:'8 Ball Pool Top-Up — 1 Cash & Coins'});
+PRODUCTS.push({id:429,name:'8 Ball Pool Top-Up — 10 Cash & Coins',category:'Game Top-Up',price:16.90,seller:'TopUp Zone',title:'8 Ball Pool Top-Up — 10 Cash & Coins'});
+PRODUCTS.push({id:430,name:'8 Ball Pool Top-Up — 25 Cash & Coins',category:'Game Top-Up',price:38.90,seller:'TopUp Zone',title:'8 Ball Pool Top-Up — 25 Cash & Coins'});
+PRODUCTS.push({id:431,name:'8 Ball Pool Top-Up — 5 Cash & Coins',category:'Game Top-Up',price:8.90,seller:'TopUp Zone',title:'8 Ball Pool Top-Up — 5 Cash & Coins'});
+PRODUCTS.push({id:432,name:'Arena of Valor Top-Up — 150 Vouchers',category:'Game Top-Up',price:4.20,seller:'TopUp Zone',title:'Arena of Valor Top-Up — 150 Vouchers'});
+PRODUCTS.push({id:433,name:'Arena of Valor Top-Up — 300 Vouchers',category:'Game Top-Up',price:8.20,seller:'TopUp Zone',title:'Arena of Valor Top-Up — 300 Vouchers'});
+PRODUCTS.push({id:434,name:'Arena of Valor Top-Up — 50 Vouchers',category:'Game Top-Up',price:1.50,seller:'TopUp Zone',title:'Arena of Valor Top-Up — 50 Vouchers'});
+PRODUCTS.push({id:435,name:'Arena of Valor Top-Up — 600 Vouchers',category:'Game Top-Up',price:15.90,seller:'TopUp Zone',title:'Arena of Valor Top-Up — 600 Vouchers'});
+PRODUCTS.push({id:436,name:'Call of Duty Mobile Top-Up — 2000 CP',category:'Game Top-Up',price:32.90,seller:'TopUp Zone',title:'Call of Duty Mobile Top-Up — 2000 CP'});
+PRODUCTS.push({id:437,name:'Call of Duty Mobile Top-Up — 420 CP',category:'Game Top-Up',price:7.50,seller:'TopUp Zone',title:'Call of Duty Mobile Top-Up — 420 CP'});
+PRODUCTS.push({id:438,name:'Call of Duty Mobile Top-Up — 80 CP',category:'Game Top-Up',price:1.50,seller:'TopUp Zone',title:'Call of Duty Mobile Top-Up — 80 CP'});
+PRODUCTS.push({id:439,name:'Call of Duty Mobile Top-Up — 880 CP',category:'Game Top-Up',price:14.90,seller:'TopUp Zone',title:'Call of Duty Mobile Top-Up — 880 CP'});
+PRODUCTS.push({id:440,name:'Free Fire Top-Up — 100 Diamonds',category:'Game Top-Up',price:1.90,seller:'TopUp Zone',title:'Free Fire Top-Up — 100 Diamonds'});
+PRODUCTS.push({id:441,name:'Free Fire Top-Up — 1000 Diamonds',category:'Game Top-Up',price:17.50,seller:'TopUp Zone',title:'Free Fire Top-Up — 1000 Diamonds'});
+PRODUCTS.push({id:442,name:'Free Fire Top-Up — 310 Diamonds',category:'Game Top-Up',price:5.60,seller:'TopUp Zone',title:'Free Fire Top-Up — 310 Diamonds'});
+PRODUCTS.push({id:443,name:'Free Fire Top-Up — 520 Diamonds',category:'Game Top-Up',price:9.20,seller:'TopUp Zone',title:'Free Fire Top-Up — 520 Diamonds'});
+PRODUCTS.push({id:444,name:'Genshin Impact Top-Up — 1980 Genesis Crystals',category:'Game Top-Up',price:47.90,seller:'TopUp Zone',title:'Genshin Impact Top-Up — 1980 Genesis Crystals'});
+PRODUCTS.push({id:445,name:'Genshin Impact Top-Up — 300 Genesis Crystals',category:'Game Top-Up',price:7.50,seller:'TopUp Zone',title:'Genshin Impact Top-Up — 300 Genesis Crystals'});
+PRODUCTS.push({id:446,name:'Genshin Impact Top-Up — 60 Genesis Crystals',category:'Game Top-Up',price:1.50,seller:'TopUp Zone',title:'Genshin Impact Top-Up — 60 Genesis Crystals'});
+PRODUCTS.push({id:447,name:'Genshin Impact Top-Up — 980 Genesis Crystals',category:'Game Top-Up',price:23.90,seller:'TopUp Zone',title:'Genshin Impact Top-Up — 980 Genesis Crystals'});
+PRODUCTS.push({id:448,name:'Honor of Kings Top-Up — 1980 Tokens',category:'Game Top-Up',price:47.90,seller:'TopUp Zone',title:'Honor of Kings Top-Up — 1980 Tokens'});
+PRODUCTS.push({id:449,name:'Honor of Kings Top-Up — 300 Tokens',category:'Game Top-Up',price:7.50,seller:'TopUp Zone',title:'Honor of Kings Top-Up — 300 Tokens'});
+PRODUCTS.push({id:450,name:'Honor of Kings Top-Up — 60 Tokens',category:'Game Top-Up',price:1.50,seller:'TopUp Zone',title:'Honor of Kings Top-Up — 60 Tokens'});
+PRODUCTS.push({id:451,name:'Honor of Kings Top-Up — 980 Tokens',category:'Game Top-Up',price:23.90,seller:'TopUp Zone',title:'Honor of Kings Top-Up — 980 Tokens'});
+PRODUCTS.push({id:452,name:'Mobile Legends Top-Up — 172 Diamonds',category:'Game Top-Up',price:4.30,seller:'TopUp Zone',title:'Mobile Legends Top-Up — 172 Diamonds'});
+PRODUCTS.push({id:453,name:'Mobile Legends Top-Up — 344 Diamonds',category:'Game Top-Up',price:8.50,seller:'TopUp Zone',title:'Mobile Legends Top-Up — 344 Diamonds'});
+PRODUCTS.push({id:454,name:'Mobile Legends Top-Up — 706 Diamonds',category:'Game Top-Up',price:17.00,seller:'TopUp Zone',title:'Mobile Legends Top-Up — 706 Diamonds'});
+PRODUCTS.push({id:455,name:'Mobile Legends Top-Up — 86 Diamonds',category:'Game Top-Up',price:2.20,seller:'TopUp Zone',title:'Mobile Legends Top-Up — 86 Diamonds'});
+PRODUCTS.push({id:456,name:'PUBG Mobile Top-Up — 1800 UC',category:'Game Top-Up',price:39.90,seller:'TopUp Zone',title:'PUBG Mobile Top-Up — 1800 UC'});
+PRODUCTS.push({id:457,name:'PUBG Mobile Top-Up — 325 UC',category:'Game Top-Up',price:7.50,seller:'TopUp Zone',title:'PUBG Mobile Top-Up — 325 UC'});
+PRODUCTS.push({id:458,name:'PUBG Mobile Top-Up — 60 UC',category:'Game Top-Up',price:1.50,seller:'TopUp Zone',title:'PUBG Mobile Top-Up — 60 UC'});
+PRODUCTS.push({id:459,name:'PUBG Mobile Top-Up — 660 UC',category:'Game Top-Up',price:14.90,seller:'TopUp Zone',title:'PUBG Mobile Top-Up — 660 UC'});
+PRODUCTS.push({id:460,name:'Roblox Top-Up — 1700 Robux',category:'Game Top-Up',price:19.90,seller:'TopUp Zone',title:'Roblox Top-Up — 1700 Robux'});
+PRODUCTS.push({id:461,name:'Roblox Top-Up — 400 Robux',category:'Game Top-Up',price:4.90,seller:'TopUp Zone',title:'Roblox Top-Up — 400 Robux'});
+PRODUCTS.push({id:462,name:'Roblox Top-Up — 4500 Robux',category:'Game Top-Up',price:49.90,seller:'TopUp Zone',title:'Roblox Top-Up — 4500 Robux'});
+PRODUCTS.push({id:463,name:'Roblox Top-Up — 800 Robux',category:'Game Top-Up',price:9.90,seller:'TopUp Zone',title:'Roblox Top-Up — 800 Robux'});
+PRODUCTS.push({id:464,name:'Valorant Top-Up — 125 VP',category:'Game Top-Up',price:1.50,seller:'TopUp Zone',title:'Valorant Top-Up — 125 VP'});
+PRODUCTS.push({id:465,name:'Valorant Top-Up — 1750 VP',category:'Game Top-Up',price:18.90,seller:'TopUp Zone',title:'Valorant Top-Up — 1750 VP'});
+PRODUCTS.push({id:466,name:'Valorant Top-Up — 420 VP',category:'Game Top-Up',price:4.90,seller:'TopUp Zone',title:'Valorant Top-Up — 420 VP'});
+PRODUCTS.push({id:467,name:'Valorant Top-Up — 700 VP',category:'Game Top-Up',price:7.90,seller:'TopUp Zone',title:'Valorant Top-Up — 700 VP'});
+PRODUCTS.push({id:468,name:'Cross-Platform Game Bundle',category:'Gaming',price:34.90,seller:'NEXORA Games',title:'Cross-Platform Game Bundle'});
+PRODUCTS.push({id:469,name:'Indie Game Bundle — 5 Titles',category:'Gaming',price:19.90,seller:'NEXORA Games',title:'Indie Game Bundle — 5 Titles'});
+PRODUCTS.push({id:470,name:'NEXORA Gamer Starter Bundle',category:'Gaming',price:29.90,seller:'NEXORA Games',title:'NEXORA Gamer Starter Bundle'});
+PRODUCTS.push({id:471,name:'Blizzard Balance eCard — $10',category:'Gaming eCards',price:9.40,seller:'Digital Cards',title:'Blizzard Balance eCard — $10'});
+PRODUCTS.push({id:472,name:'Blizzard Balance eCard — $25',category:'Gaming eCards',price:23.50,seller:'Digital Cards',title:'Blizzard Balance eCard — $25'});
+PRODUCTS.push({id:473,name:'Blizzard Balance eCard — $5',category:'Gaming eCards',price:4.70,seller:'Digital Cards',title:'Blizzard Balance eCard — $5'});
+PRODUCTS.push({id:474,name:'Blizzard Balance eCard — $50',category:'Gaming eCards',price:47.00,seller:'Digital Cards',title:'Blizzard Balance eCard — $50'});
+PRODUCTS.push({id:475,name:'Codashop Voucher eCard — $10',category:'Gaming eCards',price:9.40,seller:'Digital Cards',title:'Codashop Voucher eCard — $10'});
+PRODUCTS.push({id:476,name:'Codashop Voucher eCard — $25',category:'Gaming eCards',price:23.50,seller:'Digital Cards',title:'Codashop Voucher eCard — $25'});
+PRODUCTS.push({id:477,name:'Codashop Voucher eCard — $5',category:'Gaming eCards',price:4.70,seller:'Digital Cards',title:'Codashop Voucher eCard — $5'});
+PRODUCTS.push({id:478,name:'Codashop Voucher eCard — $50',category:'Gaming eCards',price:47.00,seller:'Digital Cards',title:'Codashop Voucher eCard — $50'});
+PRODUCTS.push({id:479,name:'Garena Shells eCard — $10',category:'Gaming eCards',price:9.40,seller:'Digital Cards',title:'Garena Shells eCard — $10'});
+PRODUCTS.push({id:480,name:'Garena Shells eCard — $25',category:'Gaming eCards',price:23.50,seller:'Digital Cards',title:'Garena Shells eCard — $25'});
+PRODUCTS.push({id:481,name:'Garena Shells eCard — $5',category:'Gaming eCards',price:4.70,seller:'Digital Cards',title:'Garena Shells eCard — $5'});
+PRODUCTS.push({id:482,name:'Garena Shells eCard — $50',category:'Gaming eCards',price:47.00,seller:'Digital Cards',title:'Garena Shells eCard — $50'});
+PRODUCTS.push({id:483,name:'MOL Points eCard — $10',category:'Gaming eCards',price:9.40,seller:'Digital Cards',title:'MOL Points eCard — $10'});
+PRODUCTS.push({id:484,name:'MOL Points eCard — $25',category:'Gaming eCards',price:23.50,seller:'Digital Cards',title:'MOL Points eCard — $25'});
+PRODUCTS.push({id:485,name:'MOL Points eCard — $5',category:'Gaming eCards',price:4.70,seller:'Digital Cards',title:'MOL Points eCard — $5'});
+PRODUCTS.push({id:486,name:'MOL Points eCard — $50',category:'Gaming eCards',price:47.00,seller:'Digital Cards',title:'MOL Points eCard — $50'});
+PRODUCTS.push({id:487,name:'Riot Games eCard — Universal — $10',category:'Gaming eCards',price:9.40,seller:'Digital Cards',title:'Riot Games eCard — Universal — $10'});
+PRODUCTS.push({id:488,name:'Riot Games eCard — Universal — $25',category:'Gaming eCards',price:23.50,seller:'Digital Cards',title:'Riot Games eCard — Universal — $25'});
+PRODUCTS.push({id:489,name:'Riot Games eCard — Universal — $5',category:'Gaming eCards',price:4.70,seller:'Digital Cards',title:'Riot Games eCard — Universal — $5'});
+PRODUCTS.push({id:490,name:'Riot Games eCard — Universal — $50',category:'Gaming eCards',price:47.00,seller:'Digital Cards',title:'Riot Games eCard — Universal — $50'});
+PRODUCTS.push({id:491,name:'UniPin Voucher eCard — $10',category:'Gaming eCards',price:9.40,seller:'Digital Cards',title:'UniPin Voucher eCard — $10'});
+PRODUCTS.push({id:492,name:'UniPin Voucher eCard — $25',category:'Gaming eCards',price:23.50,seller:'Digital Cards',title:'UniPin Voucher eCard — $25'});
+PRODUCTS.push({id:493,name:'UniPin Voucher eCard — $5',category:'Gaming eCards',price:4.70,seller:'Digital Cards',title:'UniPin Voucher eCard — $5'});
+PRODUCTS.push({id:494,name:'UniPin Voucher eCard — $50',category:'Gaming eCards',price:47.00,seller:'Digital Cards',title:'UniPin Voucher eCard — $50'});
+
+const MY_PRODUCTS=[
+{"id":1,"title":"Logos","category":"Graphics & Design","price":37.81,"custom":true,"image":"https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=85"},
+{"id":2,"title":"Brand Identity","category":"Graphics & Design","price":90.13,"custom":true,"image":"https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=85"},
+{"id":3,"title":"Web UI","category":"Graphics & Design","price":67.71,"custom":true,"image":"https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1200&q=85"},
+{"id":4,"title":"App UI","category":"Graphics & Design","price":60.23,"custom":true,"image":"https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=85"},
+{"id":5,"title":"Web Design","category":"Graphics & Design","price":52.76,"custom":true,"image":"https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85"},
+{"id":6,"title":"Social Media","category":"Graphics & Design","price":18.37,"custom":true,"image":"https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=85"},
+{"id":7,"title":"Ads & Banners","category":"Graphics & Design","price":15.38,"custom":true,"image":"https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85"},
+{"id":8,"title":"Posters","category":"Graphics & Design","price":22.86,"custom":true,"image":"https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=85"},
+{"id":9,"title":"Brochures & Flyers","category":"Graphics & Design","price":27.34,"custom":true,"image":"https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1200&q=85"},
+{"id":10,"title":"Business Cards","category":"Graphics & Design","price":15.38,"custom":true,"image":"https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=1200&q=85"},
+{"id":11,"title":"Packaging","category":"Graphics & Design","price":52.76,"custom":true,"image":"https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=1200&q=85"},
+{"id":12,"title":"Typography","category":"Graphics & Design","price":30.33,"custom":true,"image":"https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=1200&q=85"},
+{"id":13,"title":"Illustrations","category":"Graphics & Design","price":37.81,"custom":true,"image":"https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1200&q=85"},
+{"id":14,"title":"Icons","category":"Graphics & Design","price":18.37,"custom":true,"image":"https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1200&q=85"},
+{"id":15,"title":"Product & Print Design","category":"Graphics & Design","price":45.28,"custom":true,"image":"https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=85"},
+{"id":16,"title":"Logo Templates","category":"Ready Templates","price":12.39,"custom":false,"image":"https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?auto=format&fit=crop&w=1200&q=85"},
+{"id":17,"title":"Brand Identity Kits","category":"Ready Templates","price":36.31,"custom":false,"image":"https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=1200&q=85"},
+{"id":18,"title":"Business Cards","category":"Ready Templates","price":7.91,"custom":false,"image":"https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=1200&q=85"},
+{"id":19,"title":"Letterheads","category":"Ready Templates","price":6.41,"custom":false,"image":"https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1200&q=85"},
+{"id":20,"title":"Social Media Posts","category":"Ready Templates","price":10.90,"custom":false,"image":"https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=85"},
+{"id":21,"title":"Instagram Templates","category":"Ready Templates","price":9.40,"custom":false,"image":"https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=1200&q=85"},
+{"id":22,"title":"Facebook Banners","category":"Ready Templates","price":7.91,"custom":false,"image":"https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?auto=format&fit=crop&w=1200&q=85"},
+{"id":23,"title":"TikTok Ads","category":"Ready Templates","price":12.39,"custom":false,"image":"https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85"},
+{"id":24,"title":"YouTube Kits","category":"Ready Templates","price":10.90,"custom":false,"image":"https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1200&q=85"},
+{"id":25,"title":"LinkedIn Banners","category":"Ready Templates","price":7.91,"custom":false,"image":"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"},
+{"id":26,"title":"Stories & Reels","category":"Ready Templates","price":9.40,"custom":false,"image":"https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=85"},
+{"id":27,"title":"Ad Banners","category":"Ready Templates","price":9.40,"custom":false,"image":"https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85"},
+{"id":28,"title":"Posters & Flyers","category":"Ready Templates","price":10.90,"custom":false,"image":"https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=85"},
+{"id":29,"title":"Brochures","category":"Ready Templates","price":13.89,"custom":false,"image":"https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1200&q=85"},
+{"id":30,"title":"Catalogs & Magazines","category":"Ready Templates","price":22.86,"custom":false,"image":"https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=1200&q=85"},
+{"id":31,"title":"Presentations","category":"Ready Templates","price":18.37,"custom":false,"image":"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"},
+{"id":32,"title":"3D Assets","category":"Ready Templates","price":27.34,"custom":false,"image":"https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1200&q=85"},
+{"id":33,"title":"Luxury Templates","category":"Ready Templates","price":30.33,"custom":false,"image":"https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1200&q=85"},
+{"id":34,"title":"Minimal Designs","category":"Ready Templates","price":15.38,"custom":false,"image":"https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85"},
+{"id":35,"title":"UI/UX Kits","category":"Ready Templates","price":36.31,"custom":false,"image":"https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=85"},
+{"id":36,"title":"AI Video Creation","category":"AI Services","price":19.99,"custom":true,"image":"https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=85"},
+{"id":37,"title":"AI Image Creation","category":"AI Services","price":14.99,"custom":true,"image":"https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=85"}
+];
+
+let tab='custom',selectedCat='all',cart=[],selectedItems=[];
+
+
+const GIFT_CARDS = [
+    {'id':495,'name':'Amazon Gift Card — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':496,'name':'Amazon Gift Card — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':497,'name':'Amazon Gift Card — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':498,'name':'Amazon Gift Card — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+    {'id':499,'name':'Apple / iTunes Gift Card — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':500,'name':'Apple / iTunes Gift Card — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':501,'name':'Apple / iTunes Gift Card — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':502,'name':'Apple / iTunes Gift Card — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+    {'id':503,'name':'Google Play Gift Card — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':504,'name':'Google Play Gift Card — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':505,'name':'Google Play Gift Card — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':506,'name':'Google Play Gift Card — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+    {'id':507,'name':'Nintendo eShop Card — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':508,'name':'Nintendo eShop Card — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':509,'name':'Nintendo eShop Card — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':510,'name':'Nintendo eShop Card — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+    {'id':511,'name':'PlayStation Store Card — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':512,'name':'PlayStation Store Card — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':513,'name':'PlayStation Store Card — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':514,'name':'PlayStation Store Card — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+    {'id':515,'name':'Roblox Gift Card — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':516,'name':'Roblox Gift Card — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':517,'name':'Roblox Gift Card — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':518,'name':'Roblox Gift Card — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+    {'id':519,'name':'Steam Wallet Code — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':520,'name':'Steam Wallet Code — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':521,'name':'Steam Wallet Code — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':522,'name':'Steam Wallet Code — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+    {'id':523,'name':'Xbox Gift Card — $10','category':'Gift Cards','price':9.4,'seller':'Digital Cards'},
+    {'id':524,'name':'Xbox Gift Card — $25','category':'Gift Cards','price':23.5,'seller':'Digital Cards'},
+    {'id':525,'name':'Xbox Gift Card — $5','category':'Gift Cards','price':4.7,'seller':'Digital Cards'},
+    {'id':526,'name':'Xbox Gift Card — $50','category':'Gift Cards','price':47.0,'seller':'Digital Cards'},
+
+    {'id':622,'name':'Best Buy eGift Card — $10','category':'Retail Gift Cards','price':9.5,'seller':'Digital Cards'},
+    {'id':623,'name':'Best Buy eGift Card — $100','category':'Retail Gift Cards','price':95.0,'seller':'Digital Cards'},
+    {'id':624,'name':'Best Buy eGift Card — $25','category':'Retail Gift Cards','price':23.75,'seller':'Digital Cards'},
+    {'id':625,'name':'Best Buy eGift Card — $50','category':'Retail Gift Cards','price':47.5,'seller':'Digital Cards'},
+    {'id':626,'name':'eBay eGift Card — $10','category':'Retail Gift Cards','price':9.5,'seller':'Digital Cards'},
+    {'id':627,'name':'eBay eGift Card — $100','category':'Retail Gift Cards','price':95.0,'seller':'Digital Cards'},
+    {'id':628,'name':'eBay eGift Card — $25','category':'Retail Gift Cards','price':23.75,'seller':'Digital Cards'},
+    {'id':629,'name':'eBay eGift Card — $50','category':'Retail Gift Cards','price':47.5,'seller':'Digital Cards'},
+    {'id':630,'name':'Home Depot eGift Card — $10','category':'Retail Gift Cards','price':9.5,'seller':'Digital Cards'},
+    {'id':631,'name':'Home Depot eGift Card — $100','category':'Retail Gift Cards','price':95.0,'seller':'Digital Cards'},
+    {'id':632,'name':'Home Depot eGift Card — $25','category':'Retail Gift Cards','price':23.75,'seller':'Digital Cards'},
+    {'id':633,'name':'Home Depot eGift Card — $50','category':'Retail Gift Cards','price':47.5,'seller':'Digital Cards'},
+    {'id':634,'name':'IKEA eGift Card — $10','category':'Retail Gift Cards','price':9.5,'seller':'Digital Cards'},
+    {'id':635,'name':'IKEA eGift Card — $100','category':'Retail Gift Cards','price':95.0,'seller':'Digital Cards'},
+    {'id':636,'name':'IKEA eGift Card — $25','category':'Retail Gift Cards','price':23.75,'seller':'Digital Cards'},
+    {'id':637,'name':'IKEA eGift Card — $50','category':'Retail Gift Cards','price':47.5,'seller':'Digital Cards'},
+    {'id':638,'name':'Sephora eGift Card — $10','category':'Retail Gift Cards','price':9.5,'seller':'Digital Cards'},
+    {'id':639,'name':'Sephora eGift Card — $100','category':'Retail Gift Cards','price':95.0,'seller':'Digital Cards'},
+    {'id':640,'name':'Sephora eGift Card — $25','category':'Retail Gift Cards','price':23.75,'seller':'Digital Cards'},
+    {'id':641,'name':'Sephora eGift Card — $50','category':'Retail Gift Cards','price':47.5,'seller':'Digital Cards'},
+    {'id':642,'name':'Target eGift Card — $10','category':'Retail Gift Cards','price':9.5,'seller':'Digital Cards'},
+    {'id':643,'name':'Target eGift Card — $100','category':'Retail Gift Cards','price':95.0,'seller':'Digital Cards'},
+    {'id':644,'name':'Target eGift Card — $25','category':'Retail Gift Cards','price':23.75,'seller':'Digital Cards'},
+    {'id':645,'name':'Target eGift Card — $50','category':'Retail Gift Cards','price':47.5,'seller':'Digital Cards'},
+    {'id':646,'name':'Walmart eGift Card — $10','category':'Retail Gift Cards','price':9.5,'seller':'Digital Cards'},
+    {'id':647,'name':'Walmart eGift Card — $100','category':'Retail Gift Cards','price':95.0,'seller':'Digital Cards'},
+    {'id':648,'name':'Walmart eGift Card — $25','category':'Retail Gift Cards','price':23.75,'seller':'Digital Cards'},
+    {'id':649,'name':'Walmart eGift Card — $50','category':'Retail Gift Cards','price':47.5,'seller':'Digital Cards'}
+];
+
+function products(){
+  let items;
+  if(tab==='custom') items=MY_PRODUCTS.filter(x=>x.category==='Graphics & Design');
+  else if(tab==='templates') items=MY_PRODUCTS.filter(x=>x.category==='Ready Templates');
+  else if(tab==='ai') items=MY_PRODUCTS.filter(x=>x.category==='AI Services');
+  else items=applyAutoPricingToStore(PRODUCTS.concat(GIFT_CARDS));
+  return {cats:[...new Set(items.map(x=>x.category))],items};
+}
+function render(){
+ const {cats,items}=products();
+ document.getElementById('categoryList').innerHTML='<button class="cat '+(selectedCat==='all'?'active':'')+'" onclick="filterCat(\'all\',this)">🌟 All</button>'+
+ cats.map(c=>'<button class="cat '+(selectedCat===c?'active':'')+'" onclick="filterCat('+JSON.stringify(c)+',this)">'+escapeHTML(c)+'</button>').join('');
+ renderGrid(selectedCat==='all'?items:items.filter(p=>p.category===selectedCat));
+}
+function renderGrid(items){
+  const fallback='https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=85';
+  document.getElementById('productsGrid').innerHTML=items.map(p=>{
+    const image=p.image||fallback, title=p.title||p.name;
+    return '<article class="product"><div class="thumb"><img loading="lazy" decoding="async" width="1200" height="900" src="'+escapeHTML(image)+'" alt="'+escapeHTML(title)+'" onerror="this.src=\''+fallback+'\'"><span>ARVÉN / PRIVATE EDITION</span></div><div class="info"><div class="title">'+escapeHTML(title)+'</div><div class="catname">'+escapeHTML(p.category)+(p.seller?' · '+escapeHTML(p.seller):'')+'</div><div class="price">$'+Number(p.price).toFixed(2)+'</div><div style="font-size:9px;color:#999;margin:-7px 0 12px">Competitive US/EU price · Delivery after payment verification</div><div class="btns"><button class="btn" onclick="viewDetails('+p.id+')">Details</button><button class="btn buy" onclick="addById('+p.id+')">+ Cart</button></div></div></article>';
+  }).join('');
+}
+function allProducts(){return products().items}
+function getProduct(id){return allProducts().find(p=>String(p.id)===String(id))}
+function switchTab(x,b){tab=x;selectedCat='all';document.querySelectorAll('.tab').forEach(a=>a.classList.remove('active'));b.classList.add('active');render()}
+function filterCat(c,b){selectedCat=c;document.querySelectorAll('.cat').forEach(a=>a.classList.remove('active'));b.classList.add('active');render()}
+function viewDetails(id){
+ const p=getProduct(id);if(!p)return;
+ document.getElementById('modalBody').innerHTML='<div class="preview"><img src="'+p.image+'"></div><div style="color:#999;font-size:10px">'+escapeHTML(p.category)+'</div><h2 style="font-family:var(--head);margin:5px 0">'+escapeHTML(p.title)+'</h2><h1 style="color:var(--gold);font-family:var(--head)">$'+p.price.toFixed(2)+'</h1><div style="font-size:11px;color:#888;background:#faf9f6;border:1px solid #eee;padding:10px;margin:10px 0">✓ Competitive US/EU pricing · ✓ Automatic fee calculation · ✓ Secure checkout</div><p style="color:#777;font-size:13px;margin:12px 0">'+(p.custom?'This product can be customized to your specifications. Provide your colors, text, dimensions, and references.':'A ready-made digital product. After choosing to purchase, payment methods will appear so you can enter your details and transaction ID.')+'</p><button class="pill" style="width:100%" onclick="buyNow('+p.id+')">'+(p.custom?'✦ Request Customization':'💳 Buy Product')+'</button>';
+ setModal('productModal',true);
+}
+function addById(id){const p=getProduct(id);if(!p)return;cart.push({...p});updateCount();alert('Product added to cart.')}
+function buyNow(id){const p=getProduct(id);if(!p)return;selectedItems=[p];closeModal('productModal');openCheckout()}
+function updateCount(){document.getElementById('cartCount').textContent=cart.length}
+function openCart(){
+ let total=0;const el=document.getElementById('cartItems');
+ el.innerHTML=cart.length?cart.map((p,i)=>{total+=p.price;return '<div style="display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #eee;padding:8px 0"><span>'+escapeHTML(p.title)+'</span><span>$'+p.price.toFixed(2)+' <button onclick="removeCart('+i+')">×</button></span></div>'}).join(''):'Your cart is empty';
+ document.getElementById('cartTotal').textContent=total.toFixed(2);setModal('cartModal',true);
+}
+function removeCart(i){cart.splice(i,1);updateCount();openCart()}
+function openCheckout(){
+ if(!cart.length&&!selectedItems.length){alert('Please select a product first.');return}
+ if(cart.length)selectedItems=[...cart];
+ const total=selectedItems.reduce((s,p)=>s+p.price,0),custom=selectedItems.some(p=>p.custom||p.category==='AI Services');
+ document.getElementById('checkoutBody').innerHTML='<h2 style="font-family:var(--head)">Checkout / Payment</h2><div class="checkout-list">'+selectedItems.map(p=>'• '+escapeHTML(p.title)+' — $'+p.price.toFixed(2)).join('<br>')+'<br><strong>Total: $'+total.toFixed(2)+'</strong></div><div class="payment"><h3 style="color:var(--gold);font-family:var(--head)">💳 Payment Methods</h3><div class="method"><b>Binance Pay ID</b><code>1138387882</code></div><div class="method"><b>TRX / TRC20</b><code>TJhgTrPD4pVUqvU73RsmcRg1wzfWgKb9rU</code></div><div class="method"><label for="paymentMethod"><b>Payment method</b></label><select id="paymentMethod" style="width:100%;margin-top:6px"><option value="TRC20_USDT">USDT — TRC20</option><option value="BINANCE_PAY">Binance Pay</option><option value="MANUAL">Manual verification</option></select></div><p style="font-size:11px;color:#777">بعد التحويل أدخل رقم المعاملة أو رقم طلب Binance Pay. سيتم التحقق من الدفع ومطابقة المبلغ قبل تسليم المنتج.<br><small>لا ترسل كلمات المرور أو المفاتيح الخاصة.</small></p></div><form onsubmit="submitOrder(event)"><div class="grid2"><div><label>Customer Name</label><input id="custName" required></div><div><label>Email for Product Delivery</label><input id="custEmail" type="email" required></div><div class="full"><label>Transaction Hash / Binance Pay Order ID</label><input id="custTxid" required></div>'+(custom?'<div class="full"><label>Custom Design Specifications — Tell Us What You Need</label><textarea id="designDetails" placeholder="اكتب كل Details: نوع التصميم، النصوص، الألوان، المقاسات، الأسلوب، الملفات والمراجع..." required></textarea></div><div><label>Project Name</label><input id="designTitle"></div><div><label>Reference Link</label><input id="designRefs" type="url"></div>':'')+'</div><button class="pill" style="width:100%;margin-top:15px">✓ Submit Order</button></form>';
+ closeModal('cartModal');setModal('checkoutModal',true);
+}
+const API_ENDPOINTS={order:"/api/order",support:"/api/support"};
+let lastFocusedElement=null;
+function setModal(id,show){const m=document.getElementById(id);if(!m)return;m.classList.toggle("show",show);m.setAttribute("aria-hidden",show?"false":"true");if(show){lastFocusedElement=document.activeElement;setTimeout(()=>m.querySelector("input,textarea,select,button")?.focus(),0)}else if(lastFocusedElement?.focus){lastFocusedElement.focus()}}
+async function postJSON(url,payload){const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(payload),credentials:"same-origin"});let data={};try{data=await r.json()}catch(_){}if(!r.ok)throw new Error(data.error||"Request failed");return data}
+async function submitOrder(e){e.preventDefault();const form=e.currentTarget,button=form.querySelector("button:last-child");if(button.disabled)return;const name=document.getElementById("custName").value.trim(),email=document.getElementById("custEmail").value.trim(),txid=document.getElementById("custTxid").value.trim(),paymentMethod=document.getElementById("paymentMethod")?.value||"MANUAL",details=document.getElementById("designDetails")?.value.trim()||"",title=document.getElementById("designTitle")?.value.trim()||"",refs=document.getElementById("designRefs")?.value.trim()||"";const items=selectedItems.map(p=>({id:p.id,title:p.title||p.name,category:p.category}));if(!items.length)return;button.disabled=true;button.textContent="Submitting…";try{const result=await postJSON(API_ENDPOINTS.order,{name,email,txid,paymentMethod,providerOrderId:paymentMethod==='BINANCE_PAY'?txid:'',details,title,refs,items});document.getElementById("checkoutBody").innerHTML='<div style="text-align:center;padding:35px"><div style="font-size:48px">✅</div><h2 id="checkoutModalTitle" style="font-family:var(--head)">Order Received</h2><p style="color:#777">Reference: <strong>'+escapeHTML(result.orderId||"Pending")+'</strong></p><p style="color:#777">We will verify the payment before delivery.</p><strong style="display:block;color:var(--gold);margin:12px">'+escapeHTML(email)+"</strong></div>";cart=[];selectedItems=[];updateCount()}catch(err){button.disabled=false;button.textContent="✓ Submit Order";alert(err.message||"Unable to submit the order. Please try again.")}}
+function openCustomRequest(){
+ document.getElementById('customBody').innerHTML='<h2 style="font-family:var(--head);text-align:center">✦ حسب طلبك — اطلب وسيتم التنفيذ</h2><p style="text-align:center;color:#777;font-size:12px;margin:8px 0 20px">Describe your idea in detail and we will send it directly for review.</p><form onsubmit="submitCustom(event)"><div class="grid2"><div><label>Name</label><input id="reqName" required></div><div><label>Email</label><input id="reqEmail" type="email" required></div><div class="full"><label>What would you like us to create?</label><input id="reqTitle" placeholder="Logo / Website / Brand Identity..." required></div><div class="full"><label>Project Specifications</label><textarea id="reqDetails" placeholder="Colors, text, dimensions, style, references, and desired outcome..." required></textarea></div><div class="full"><label>Reference Link (اختياري)</label><input id="reqRefs" type="url"></div></div><button class="pill" style="width:100%;margin-top:12px">🚀 Submit Custom Request</button></form>';
+ setModal('customModal',true);
+}
+async function submitCustom(e){e.preventDefault();const form=e.currentTarget,button=form.querySelector("button:last-child");if(button.disabled)return;const name=document.getElementById("reqName").value.trim(),email=document.getElementById("reqEmail").value.trim(),title=document.getElementById("reqTitle").value.trim(),details=document.getElementById("reqDetails").value.trim(),refs=document.getElementById("reqRefs").value.trim();button.disabled=true;button.textContent="Submitting…";try{const result=await postJSON(API_ENDPOINTS.order,{type:"custom",name,email,title,details,refs});document.getElementById("customBody").innerHTML='<div style="text-align:center;padding:35px"><div style="font-size:48px">✅</div><h2 id="customModalTitle" style="font-family:var(--head)">Request Received</h2><p style="color:#777">Reference: <strong>'+escapeHTML(result.orderId||"Pending")+'</strong></p><strong style="color:var(--gold)">'+escapeHTML(email)+"</strong></div>"}catch(err){button.disabled=false;button.textContent="🚀 Submit Custom Request";alert(err.message||"An error occurred while sending your request.")}}
+function openSupport(){document.getElementById('support').scrollIntoView({behavior:'smooth'})}
+async function submitSupport(e){e.preventDefault();const form=e.currentTarget,button=form.querySelector("button:last-child");if(button.disabled)return;const payload={name:document.getElementById("supportName").value.trim(),contact:document.getElementById("supportContact").value.trim(),topic:document.getElementById("supportTopic").value,message:document.getElementById("supportMessage").value.trim()};button.disabled=true;button.textContent="Sending…";try{const result=await postJSON(API_ENDPOINTS.support,payload);alert("Support request received. Reference: "+(result.orderId||"Pending"));form.reset()}catch(err){alert(err.message||"Unable to send support request.")}finally{button.disabled=false;button.textContent="Send Support Request"}}
+document.getElementById('searchInput').addEventListener('input',function(){const q=this.value.toLowerCase().trim(),items=allProducts().filter(p=>(p.title||p.name).toLowerCase().includes(q)||p.category.toLowerCase().includes(q));renderGrid(items)})
+function closeModal(id){setModal(id,false)}
+document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)setModal(m.id,false)}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const m=document.querySelector('.modal.show');if(m)setModal(m.id,false)}});
+function escapeHTML(v){return String(v).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[x]))}
+render();
+</script>
+</body>
+</html>

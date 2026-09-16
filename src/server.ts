@@ -1,0 +1,13 @@
+import express from 'express'; import helmet from 'helmet'; import cookieParser from 'cookie-parser'; import rateLimit from 'express-rate-limit'; import path from 'node:path'; import {fileURLToPath} from 'node:url'; import order from './routes/order.js'; import support from './routes/support.js'; import payment from './routes/payment.js'; import admin from './routes/admin.js'; import {env} from './config.js';
+const app=express(); const __dirname=path.dirname(fileURLToPath(import.meta.url));
+app.set('trust proxy',1); app.use(helmet({contentSecurityPolicy:false,crossOriginEmbedderPolicy:false})); app.use(rateLimit({windowMs:60_000,max:120,standardHeaders:true,legacyHeaders:false,skip:(req)=>req.path==='/health'})); app.use(express.json({limit:'200kb',verify:(req:any,_res,buf)=>{req.rawBody=buf}})); app.use(cookieParser());
+app.use(express.static(path.resolve(__dirname,'../')));
+app.use('/api/order',order); app.use('/api/support',support); app.use('/api/payments',payment); app.use('/api/admin',admin);
+app.get('/health',(_req,res)=>res.json({ok:true,service:'arven-backend',time:new Date().toISOString()}));
+app.get('/admin',(_req,res)=>res.sendFile(path.resolve(__dirname,'../public/admin.html')));
+app.use((_req,res)=>res.status(404).json({ok:false,error:'Not found'}));
+app.use((err:any,_req:any,res:any,_next:any)=>{console.error(err); if(err?.name==='ZodError')return res.status(400).json({ok:false,error:'Invalid request',details:err.issues}); res.status(500).json({ok:false,error:env.NODE_ENV==='production'?'Internal server error':(err?.message||'Internal error')});});
+const server=app.listen(env.PORT,()=>console.log(`ARVÉN server listening on ${env.PORT}`));
+const shutdown=async()=>{server.close(); const {prisma}=await import('./db.js'); await prisma.$disconnect(); process.exit(0);};
+process.on('SIGTERM',shutdown);
+process.on('SIGINT',shutdown);

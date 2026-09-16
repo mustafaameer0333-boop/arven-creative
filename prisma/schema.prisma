@@ -1,0 +1,151 @@
+generator client { provider = "prisma-client-js" }
+
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+
+enum OrderStatus { PENDING_PAYMENT PAYMENT_DETECTED PAYMENT_VERIFIED PROCESSING DELIVERED COMPLETED FAILED CANCELLED REFUNDED }
+enum PaymentStatus { PENDING DETECTED VERIFIED FAILED EXPIRED }
+enum DeliveryStatus { PENDING RESERVED DELIVERED FAILED }
+enum InventoryStatus { AVAILABLE RESERVED SOLD DISABLED }
+enum PaymentMethod { TRC20_USDT BINANCE_PAY MANUAL }
+
+model AdminUser {
+  id String @id @default(cuid())
+  email String @unique
+  passwordHash String
+  role String @default("admin")
+  active Boolean @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  auditLogs AuditLog[]
+}
+
+model Product {
+  id Int @id
+  name String
+  title String
+  category String
+  seller String?
+  supplierPrice Decimal @db.Decimal(12,2)
+  price Decimal @db.Decimal(12,2)
+  active Boolean @default(true)
+  deliveryType String @default("inventory")
+  image String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  orderItems OrderItem[]
+  inventory InventoryItem[]
+}
+
+model Order {
+  id String @id
+  name String
+  email String
+  status OrderStatus @default(PENDING_PAYMENT)
+  total Decimal @db.Decimal(12,2)
+  currency String @default("USD")
+  paymentMethod PaymentMethod
+  txid String?
+  details String?
+  title String?
+  refs String?
+  idempotencyKey String? @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  items OrderItem[]
+  payments Payment[]
+  deliveries Delivery[]
+  auditLogs AuditLog[]
+}
+
+model OrderItem {
+  id String @id @default(cuid())
+  orderId String
+  productId Int?
+  title String
+  category String
+  quantity Int @default(1)
+  unitPrice Decimal @db.Decimal(12,2)
+  lineTotal Decimal @db.Decimal(12,2)
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  @@index([orderId])
+}
+
+model Payment {
+  id String @id @default(cuid())
+  orderId String
+  method PaymentMethod
+  status PaymentStatus @default(PENDING)
+  txid String?
+  providerOrderId String?
+  amount Decimal? @db.Decimal(12,6)
+  currency String @default("USDT")
+  raw Json?
+  verifiedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  @@index([txid])
+  @@index([providerOrderId])
+}
+
+model InventoryItem {
+  id String @id @default(cuid())
+  productId Int
+  secretValue String
+  status InventoryStatus @default(AVAILABLE)
+  reservedAt DateTime?
+  soldAt DateTime?
+  orderId String?
+  createdAt DateTime @default(now())
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  deliveryItems DeliveryItem[]
+  @@index([productId, status])
+  @@index([orderId])
+}
+
+model Delivery {
+  id String @id @default(cuid())
+  orderId String
+  status DeliveryStatus @default(PENDING)
+  email String
+  deliveredAt DateTime?
+  createdAt DateTime @default(now())
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  items DeliveryItem[]
+  @@index([orderId])
+}
+
+model DeliveryItem {
+  id String @id @default(cuid())
+  deliveryId String
+  inventoryId String?
+  title String
+  value String
+  delivery Delivery @relation(fields: [deliveryId], references: [id], onDelete: Cascade)
+  inventory InventoryItem? @relation(fields: [inventoryId], references: [id], onDelete: SetNull)
+}
+
+model SupportTicket {
+  id String @id @default(cuid())
+  name String
+  contact String
+  topic String
+  message String
+  status String @default("OPEN")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AuditLog {
+  id String @id @default(cuid())
+  adminId String?
+  orderId String?
+  action String
+  metadata Json?
+  createdAt DateTime @default(now())
+  admin AdminUser? @relation(fields: [adminId], references: [id], onDelete: SetNull)
+  order Order? @relation(fields: [orderId], references: [id], onDelete: SetNull)
+  @@index([orderId])
+  @@index([adminId])
+}
