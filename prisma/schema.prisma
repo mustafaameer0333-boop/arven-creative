@@ -1,12 +1,47 @@
-generator client { provider = "prisma-client-js" }
+generator client {
+  provider = "prisma-client-js"
+}
 
-datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
 
-enum OrderStatus { PENDING_PAYMENT PAYMENT_DETECTED PAYMENT_VERIFIED PROCESSING DELIVERED COMPLETED FAILED CANCELLED REFUNDED }
-enum PaymentStatus { PENDING DETECTED VERIFIED FAILED EXPIRED }
-enum DeliveryStatus { PENDING RESERVED DELIVERED FAILED }
-enum InventoryStatus { AVAILABLE RESERVED SOLD DISABLED }
-enum PaymentMethod { TRC20_USDT BINANCE_PAY MANUAL }
+enum OrderStatus {
+  PENDING_PAYMENT
+  PAYMENT_DETECTED
+  PAYMENT_VERIFIED
+  PROCESSING
+  DELIVERED
+  COMPLETED
+  FAILED
+  CANCELLED
+  REFUNDED
+}
+enum PaymentStatus {
+  PENDING
+  DETECTED
+  VERIFIED
+  FAILED
+  EXPIRED
+}
+enum DeliveryStatus {
+  PENDING
+  RESERVED
+  DELIVERED
+  FAILED
+}
+enum InventoryStatus {
+  AVAILABLE
+  RESERVED
+  SOLD
+  DISABLED
+}
+enum PaymentMethod {
+  TRC20_USDT
+  BINANCE_PAY
+  MANUAL
+}
 
 model AdminUser {
   id String @id @default(cuid())
